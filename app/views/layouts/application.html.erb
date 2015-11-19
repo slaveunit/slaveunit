@@ -1,14 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Nameofapp</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+  <title>Slave Unit App</title>
+
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Michroma' rel='stylesheet' type='text/css'>
+
+  	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+  	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  
+	<!-- To use Javascript from the internet -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<!-- To make responsive on smartphones -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<%=csrf_meta_tags %>
+
 </head>
 <body>
-
+<!-- navbar from internet search -->
+<div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+            <a href="#">
+                HOME
+            </a>
+        </li>
+        <li>
+            <a href="#">WORK</a>
+        </li>
+        <li>
+            <a href="#">SERVICES</a>
+        </li>
+        <li>
+            <a href="#">CONTACT</a>
+        </li>
+        <li>
+            <a href="#">ABOUT</a>
+        </li>
+        <li>
+            <a href="#">FAQ</a>
+        </li>
+    </ul>
+</div>
+<h2>Can you feel me?</h2>
 <%= yield %>
 
 </body>
+<div id="footer">
+	<p>SLAVE UNIT WEB DEVELOPMENT
+	<span class="glyphicon glyphicon-copyright-mark"></span>2015
+	</p>
+</div>
 </html>
