@@ -19,32 +19,33 @@
 
 </head>
 <body>
-<!-- navbar from internet search -->
-<div id="sidebar-wrapper">
-    <ul class="sidebar-nav">
-        <li class="sidebar-brand">
-            <a href="#">
-                HOME
-            </a>
-        </li>
-        <li>
-            <a href="#">SHOP</a>
-        </li>
-        <li>
-            <a href="#">CONTACT</a>
-        </li>
-        <li>
-            <a href="#">ABOUT</a>
-        </li>
-        <li>
-            <a href="#"></a>
-        </li>
-        <li>
-            <a href="#"></a>
-        </li>
-    </ul>
-</div>
-<h2>Can you feel me?</h2>
+    <!-- Navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="nav">
+        <div class="navhome" id="navhome">
+            <a href="#index" alt="logo"><%= image_tag("logo-nav.jpg") %></a>
+        </div>
+        <div class="container-fluid menu">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#mywork"><span class="glyphicon glyphicon-briefcase"></a></li>
+              <li><a href="#mystyle"><span class="glyphicon glyphicon-sunglasses"></a></li>
+              <li><a href="#about"><span class="glyphicon glyphicon-info-sign"></a></li>
+              <li><a href="#contact"><span class="glyphicon glyphicon-phone-alt"></a></li>
+              <li><a href="#faq"><span class="glyphicon glyphicon-question-sign"></a></li>
+            </ul>
+          </div>
+        </div><!-- end container-fluid menu --> 
+    </nav> <!-- end nav --> 
+   
+
 <%= yield %>
 
 </body>

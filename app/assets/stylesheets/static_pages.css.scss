@@ -4,8 +4,6 @@
 
 body {
 	background-color: black;
-	padding-top: 1%;
-	padding-left: 250px;
 }
 
 h1 {
@@ -26,140 +24,113 @@ p {
 
 
 
-
-
-// Side navbar that I got from internet search
-#wrapper {
-    padding-left: 0;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-
-#wrapper.toggled {
-    padding-left: 250px;
-}
-
-#sidebar-wrapper {
-    z-index: 1000;
-    position: fixed;
-    left: 250px;
-    width: 0;
-    height: 100%;
-    margin-left: -250px;
-    overflow-y: auto;
-    background: #000;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-
-#wrapper.toggled #sidebar-wrapper {
-    width: 250px;
-}
-
-#page-content-wrapper {
-    width: 100%;
-    position: absolute;
-    padding: 15px;
-}
-
-#wrapper.toggled #page-content-wrapper {
-    position: absolute;
-    margin-right: -250px;
-}
-
-/* Sidebar Styles */
-
-.sidebar-nav {
-    position: absolute;
+/*NAVBAR*/
+#nav {
     top: 0;
-    width: 250px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 43px;
+    opacity: 0.75;
+    z-index: 6
 }
 
-.sidebar-nav li {
-    text-indent: 20px;
-    line-height: 40px;
+/*NAVBAR LOGO GLITCH*/
+.navhome {
+    background-image: asset-data-url("logo-nav-glitch.jpg");
+    background-repeat: no-repeat;
 }
 
-.sidebar-nav li a {
-    display: block;
-    text-decoration: none;
-    color: #999999;
+#navhome img:hover {
+    opacity: 0;
+}
+/*NAVBAR LOGO GLITCH*/
+
+.navbar {
+    height: 43px
 }
 
-.sidebar-nav li a:hover {
-    text-decoration: none;
-    color: #fff;
-    background: rgba(255,255,255,0.2);
+.navhome {
+    width: 20%;
+    float: left;
+    margin-top: 4px
 }
 
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-    text-decoration: none;
+.menu {
+    width: 70%;
+    display: inline-block;
 }
 
-.sidebar-nav > .sidebar-brand {
-    height: 65px;
-    font-size: 18px;
-    line-height: 60px;
+.navbar-collapse {
+    float: right;
 }
 
-.sidebar-nav > .sidebar-brand a {
-    color: #999999;
+.nav li a {
+    margin-left: 1em;
+    margin-right: 1em
 }
 
-.sidebar-nav > .sidebar-brand a:hover {
-    color: #fff;
-    background: none;
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: orange;}
+
+.nav a {
+    transition: color 950ms;
+}
+/*NAVBAR*/
+
+
+
+
+
+
+/* BGMOUSEMOVEPARALLAX
+Most of this code I got from:
+http://www.jqueryscript.net/animation/Create-Interactive-Moving-Objects-with-jQuery-CSS3-bgMouseMove.html
+and I edited. */
+
+body {
+  overflow: hidden;
 }
 
-@media(min-width:768px) {
-    #wrapper {
-        padding-left: 250px;
-    }
-
-    #wrapper.toggled {
-        padding-left: 0;
-    }
-
-    #sidebar-wrapper {
-        width: 250px;
-    }
-
-    #wrapper.toggled #sidebar-wrapper {
-        width: 0;
-    }
-
-    #page-content-wrapper {
-        padding: 20px;
-        position: relative;
-    }
-
-    #wrapper.toggled #page-content-wrapper {
-        position: relative;
-        margin-right: 0;
-    }
+.layer {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding: 50px 200px;
+  margin: -50px -200px;
+  left: 0px;
+  top: 0px;
 }
 
+.img1 {
+  background: asset-data-url("drumsyn.jpg");
+  z-index: 1;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  height: 65em;
 
-// Footer
-#footer {
-   position:fixed;
-   left:0px;
-   padding-right: 20px;
-   bottom:0px;
-   height:30px;
-   width:100%;
-   text-align: right;
-   
 }
 
-#footer p {
-	color: gray;
+.overlay {
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.28); 
+}
+
+.overlay img {
+  margin-top: 18%;
 }
