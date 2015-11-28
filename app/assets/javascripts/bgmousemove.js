@@ -1,6 +1,13 @@
+// document ready
+$(document).on('ready page:load', function () {
+
+
+
+
 var img2 = $('.img2');
 var img1 = $('.img1');
 var overlay = $('.overlay');
+
 
 
 overlay.mousemove(function(e){
@@ -28,4 +35,8 @@ overlay.mousemove(function(e){
   'transform'         : 'translate3d(' + amountMovedX + 'px,' + amountMovedY + 'px, 0)'
 });
 
+});
+
+
+//end document ready
 });

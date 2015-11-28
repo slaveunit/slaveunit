@@ -24,6 +24,7 @@ p {
 
 
 
+
 /*NAVBAR*/
 #nav {
     top: 0;
@@ -82,6 +83,80 @@ p {
 
 
 
+/*FOOTER*/
+#footer-lg {
+  z-index: 2;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.fb-like {
+  float: left;
+
+  height: 50px
+}
+
+.socialfooter {
+  width: 10%;
+  float: left;
+ 
+  height: 50px;
+  padding-left: 4px;
+}
+
+.socialfooter img {
+  padding-left: 6px;
+}
+
+.footerlogo {
+  width: 50%;
+  height: 50px;
+  display: inline-block;
+    float: right;
+    font-family: 'Share Tech Mono', sans-serif;
+    font-size: 175%;
+}
+
+#footer-lg .footerlogoinside {
+  float: right;
+  padding-right: 2%;
+}
+
+#footer-lg .footerlogoinside p {
+  font-family: 'Share Tech Mono', sans-serif;
+  font-size: 55%;
+  color: lightgray;
+}
+
+/*FOOTER MOBILE*/
+#footer-sm {
+  text-align: right;
+  padding-bottom: 1em;
+}
+
+.socialfooter-sm {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+.footerlogo-sm {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: right;
+}
+
+#footer-sm > div.fb-like-sm > div {
+  float: inherit;
+}
+/*FOOTER*/
+
+
+
+
+
 
 /* BGMOUSEMOVEPARALLAX
 Most of this code I got from:
@@ -134,3 +209,5 @@ body {
 .overlay img {
   margin-top: 18%;
 }
+
+/* End BGMOUSEMOVEPARALLAX */
