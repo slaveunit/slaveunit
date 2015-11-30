@@ -10,16 +10,23 @@ h1 {
 	color: red; 
 	font-family: 'Michroma', sans-serif;
 	font-size: 320%;
+  padding-bottom: 3%;
 }
 
 h2 {
-	color: yellow;
-	font-family: consolas, sans-serif;
+	color: red;
+	font-family: 'Michroma', sans-serif;
+}
+
+h3 {
+  color: red;
+  font-family: 'Michroma', sans-serif;
 }
 
 p {
-	color: orange;
+	color: gray;
 	font-family: consolas, sans-serif;
+  font-size: 150%;
 }
 
 
@@ -89,6 +96,7 @@ p {
   position: fixed;
   bottom: 0;
   width: 100%;
+  height: 25px;
 }
 
 .fb-like {
@@ -120,7 +128,7 @@ p {
 
 #footer-lg .footerlogoinside {
   float: right;
-  padding-right: 2%;
+  padding-right: 5%;
 }
 
 #footer-lg .footerlogoinside p {
@@ -129,17 +137,28 @@ p {
   color: lightgray;
 }
 
+
+
 /*FOOTER MOBILE*/
 #footer-sm {
   text-align: right;
-  padding-bottom: 1em;
+  padding-bottom: 0;
+  width: 98%;
+  margin-top: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.footerlogo-sm .footerlogoinside p {
+  padding-bottom: 0;
+  color: gray;
+  font-family: 'Share Tech Mono', sans-serif;
 }
 
 .socialfooter-sm {
   padding-left: 0;
   padding-right: 0;
-  padding-top: 1em;
-  padding-bottom: 2em;
+ 
 }
 
 .footerlogo-sm {
@@ -148,9 +167,7 @@ p {
   text-align: right;
 }
 
-#footer-sm > div.fb-like-sm > div {
-  float: inherit;
-}
+
 /*FOOTER*/
 
 
@@ -191,7 +208,7 @@ body {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  height: 65em;
+  height: 1000px;
 
 }
 
@@ -207,7 +224,114 @@ body {
 }
 
 .overlay img {
-  margin-top: 18%;
+  margin-top: 19%;
 }
 
 /* End BGMOUSEMOVEPARALLAX */
+
+
+
+
+
+/* HERO IMAGE MOBILE */
+.hero-mobile {
+  padding-top: 15%;
+}
+/* END HERO IMAGE MOBILE */
+
+
+
+
+/* STORE */
+.store-wrapper {
+  background-color: white;
+  padding-bottom: 30em;
+  overflow: scroll;
+  height: 900px;
+  
+}
+
+.store-inner {
+  width: 90%;
+  margin: auto;
+  }
+
+
+.store-inner h1 {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.store-inner h1, h2, h3 {
+  color: gray;
+}
+
+.store-inner h3 {
+  padding-bottom: 5%;
+}
+
+.store-item {
+  padding-bottom: 25%;
+  text-align: center;
+}
+
+.store-last-item {
+  text-align: center;
+}
+
+/* END STORE */
+
+
+
+
+/* ABOUT */
+.about-wrapper {
+  overflow: scroll;
+  height: 1000px;
+
+}
+.about-inner {
+width: 90%;
+  margin: auto;
+  }
+
+
+.about-logo {
+  padding-top: 20em;
+  padding-bottom: 35em;
+  text-align: center;
+}
+
+.about-inner h1 {
+  padding-top: 5%;
+}
+/* END ABOUT */
+
+
+/* CONTACT */
+.contact-wrapper {
+  height: 1000px;
+  padding-top: 8em;
+}
+
+.contact-inner {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.contact-logo {
+  padding-bottom: 5em;
+  text-align: center;
+}
+
+.contact-inner h1 {
+  padding-top: 5%;
+}
+
+.contact-title h2 {
+  color: white;
+}
+/* END CONTACT */
+
+
