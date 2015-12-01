@@ -3,13 +3,17 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-	background-color: black;
+	background-color: white;
+}
+
+.index-wrapper {
+  background-color: black;
 }
 
 h1 {
 	color: red; 
 	font-family: 'Michroma', sans-serif;
-	font-size: 320%;
+	font-size: 400%;
   padding-bottom: 3%;
 }
 
@@ -147,6 +151,8 @@ p {
   margin-top: 100%;
   position: fixed;
   bottom: 0;
+  font-size: 50%;
+  background-color: black;
 }
 
 .footerlogo-sm .footerlogoinside p {
@@ -236,8 +242,15 @@ body {
 /* HERO IMAGE MOBILE */
 .hero-mobile {
   padding-top: 15%;
+  height: 1050px;
 }
 /* END HERO IMAGE MOBILE */
+
+
+/* ABOUT */
+.about-inner h2 {
+  color: white;
+}
 
 
 
@@ -262,12 +275,20 @@ body {
   padding-bottom: 5%;
 }
 
-.store-inner h1, h2, h3 {
+.store-title h1 {
+  padding-bottom: 0;
+  color: black;
+}
+
+
+.store-title h2 {
   color: gray;
 }
 
 .store-inner h3 {
   padding-bottom: 5%;
+  text-align: left;
+  color: red;
 }
 
 .store-item {
@@ -275,9 +296,42 @@ body {
   text-align: center;
 }
 
+.store-item img, .store-last-item img  {
+  margin: auto;
+  padding-bottom: 2%;
+}
+
 .store-last-item {
   text-align: center;
 }
+
+.merchandise p {
+  color: gray;
+}
+
+/* mobile */
+.store-title-sm {
+  padding-top: 50%;
+  padding-bottom: 80%;
+}
+
+.store-title-sm h2, h3 {
+  text-align: center;
+  font-size: 130%;
+}
+
+.store-title-sm h3 {
+  text-align: center;
+}
+
+.store-title-sm h1 {
+  padding: 0;
+  text-align: center;
+  font-size: 220%;
+  color: black;
+}
+
+
 
 /* END STORE */
 
@@ -287,7 +341,8 @@ body {
 /* ABOUT */
 .about-wrapper {
   overflow: scroll;
-  height: 1000px;
+  background-color: black;
+  height: 1050px;
 
 }
 .about-inner {
@@ -296,22 +351,65 @@ width: 90%;
   }
 
 
-.about-logo {
+.about-logo img {
   padding-top: 20em;
-  padding-bottom: 35em;
-  text-align: center;
+  padding-bottom: 40em;
+  margin: auto;
 }
 
 .about-inner h1 {
   padding-top: 5%;
 }
+
+.about-paragraph p {
+  color: gray;
+}
+
+.about-inner-sm {
+  width: 90%;
+  margin: auto;
+}
+
+.about-inner-sm h1 {
+  padding-top: 5%;
+  font-size: 10%;
+}
+
+.about-paragraph-sm p {
+  color: gray;
+  font-size: 140%;
+}
+
+.about-logo-sm img {
+  padding-top: 50em;
+  padding-bottom: 40em;
+  margin: auto;
+}
 /* END ABOUT */
 
 
 /* CONTACT */
+
+
+
+@media screen and (min-width: 376px) {
 .contact-wrapper {
-  height: 1000px;
+  background: asset-data-url("vigan bw3.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 1100px;
   padding-top: 8em;
+}
+}
+
+@media screen and (max-width: 375px) {
+  .contact-wrapper {
+    background: asset-data-url("vigan bw sm2.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 627px;
+    padding-top: 6em;
+  }
 }
 
 .contact-inner {
@@ -320,10 +418,11 @@ width: 90%;
   text-align: center;
 }
 
-.contact-logo {
-  padding-bottom: 5em;
-  text-align: center;
+.contact-logo img {
+  padding-bottom: 2%;
+  margin: auto;
 }
+
 
 .contact-inner h1 {
   padding-top: 5%;
@@ -332,6 +431,22 @@ width: 90%;
 .contact-title h2 {
   color: white;
 }
+
+.contact-paragraph h3, p {
+  color: white;
+}
+
+.contact-paragraph-sm {
+  padding-top: 10%;
+}
+
+
+.contact-paragraph-sm h3, p {
+  color: white;
+  font-size: 200%;
+}
+
+
 /* END CONTACT */
 
 
