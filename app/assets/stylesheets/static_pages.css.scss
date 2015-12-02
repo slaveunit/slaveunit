@@ -36,7 +36,8 @@ p {
 
 
 
-/*NAVBAR*/
+
+/* NAVBAR */
 #nav {
     top: 0;
     background-color: black;
@@ -47,9 +48,9 @@ p {
     z-index: 6
 }
 
-/*NAVBAR LOGO GLITCH*/
+/* NAVBAR LOGO GLITCH */
 .navhome {
-    background-image: asset-data-url("logo-nav-glitch.jpg");
+    background-image: asset-data-url("logo-nav-glitch2.jpg");
     background-repeat: no-repeat;
 }
 
@@ -82,37 +83,33 @@ p {
     margin-right: 1em
 }
 
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
-    color: orange;}
-
 .nav a {
     transition: color 950ms;
 }
-/*NAVBAR*/
+/* NAVBAR */
 
 
 
 
 
-/*FOOTER*/
+/* FOOTER */
 #footer-lg {
   z-index: 2;
   position: fixed;
   bottom: 0;
   width: 100%;
   height: 25px;
+  background-color: black;
 }
 
 .fb-like {
   float: left;
-
   height: 50px
 }
 
 .socialfooter {
   width: 10%;
   float: left;
- 
   height: 50px;
   padding-left: 4px;
 }
@@ -125,9 +122,9 @@ p {
   width: 50%;
   height: 50px;
   display: inline-block;
-    float: right;
-    font-family: 'Share Tech Mono', sans-serif;
-    font-size: 175%;
+  float: right;
+  font-family: 'Share Tech Mono', sans-serif;
+  font-size: 175%;
 }
 
 #footer-lg .footerlogoinside {
@@ -141,9 +138,7 @@ p {
   color: lightgray;
 }
 
-
-
-/*FOOTER MOBILE*/
+/* FOOTER MOBILE */
 #footer-sm {
   text-align: right;
   padding-bottom: 0;
@@ -164,7 +159,6 @@ p {
 .socialfooter-sm {
   padding-left: 0;
   padding-right: 0;
- 
 }
 
 .footerlogo-sm {
@@ -172,9 +166,8 @@ p {
   padding-right: 0;
   text-align: right;
 }
-
-
-/*FOOTER*/
+/* END FOOTER MOBILE */
+/* FOOTER */
 
 
 
@@ -233,7 +226,7 @@ body {
   margin-top: 19%;
 }
 
-/* End BGMOUSEMOVEPARALLAX */
+/* END BGMOUSEMOVEPARALLAX */
 
 
 
@@ -247,12 +240,6 @@ body {
 /* END HERO IMAGE MOBILE */
 
 
-/* ABOUT */
-.about-inner h2 {
-  color: white;
-}
-
-
 
 
 /* STORE */
@@ -261,14 +248,12 @@ body {
   padding-bottom: 30em;
   overflow: scroll;
   height: 900px;
-  
 }
 
 .store-inner {
   width: 90%;
   margin: auto;
-  }
-
+}
 
 .store-inner h1 {
   padding-top: 5%;
@@ -279,7 +264,6 @@ body {
   padding-bottom: 0;
   color: black;
 }
-
 
 .store-title h2 {
   color: gray;
@@ -307,9 +291,10 @@ body {
 
 .merchandise p {
   color: gray;
+  font-family: consolas, sans-serif;
 }
 
-/* mobile */
+/* MOBILE STORE */
 .store-title-sm {
   padding-top: 50%;
   padding-bottom: 80%;
@@ -330,9 +315,7 @@ body {
   font-size: 220%;
   color: black;
 }
-
-
-
+/* END MOBILE STORE */
 /* END STORE */
 
 
@@ -343,17 +326,20 @@ body {
   overflow: scroll;
   background-color: black;
   height: 1050px;
-
 }
-.about-inner {
-width: 90%;
-  margin: auto;
-  }
 
+.about-inner {
+  width: 90%;
+  margin: auto;
+}
+
+.about-inner h2 {
+  color: white;
+}
 
 .about-logo img {
-  padding-top: 20em;
-  padding-bottom: 40em;
+  padding-top: 30em;
+  padding-bottom: 50em;
   margin: auto;
 }
 
@@ -382,24 +368,24 @@ width: 90%;
 
 .about-logo-sm img {
   padding-top: 50em;
-  padding-bottom: 40em;
+  padding-bottom: 60em;
   margin: auto;
 }
 /* END ABOUT */
 
 
+
+
+
 /* CONTACT */
-
-
-
 @media screen and (min-width: 376px) {
-.contact-wrapper {
-  background: asset-data-url("vigan bw3.jpg");
-  background-size: cover;
-  background-position: center center;
-  height: 1100px;
-  padding-top: 8em;
-}
+  .contact-wrapper {
+    background: asset-data-url("vigan bw3.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 1100px;
+    padding-top: 8em;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -423,6 +409,17 @@ width: 90%;
   margin: auto;
 }
 
+.contact-inner {
+  height: 100%;
+}
+
+.contact-logo{
+  height: 25%;
+}
+
+.contact-paragraph{
+  height: 75%;
+}
 
 .contact-inner h1 {
   padding-top: 5%;
@@ -440,13 +437,14 @@ width: 90%;
   padding-top: 10%;
 }
 
-
-.contact-paragraph-sm h3, p {
+.contact-paragraph-sm h3{
   color: white;
-  font-size: 200%;
+  font-size: 190%;
 }
 
-
+.contact-paragraph-sm p {
+  font-family: consolas, sans-serif;
+  color: white;
+  font-size: 170%;
+}
 /* END CONTACT */
-
-
