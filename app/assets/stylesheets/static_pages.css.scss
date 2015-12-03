@@ -245,7 +245,7 @@ body {
 /* STORE */
 .store-wrapper {
   background-color: white;
-  padding-bottom: 30em;
+  padding-bottom: 0;
   overflow: scroll;
   height: 900px;
 }
@@ -287,11 +287,23 @@ body {
 
 .store-last-item {
   text-align: center;
+  padding-bottom: 30em;
 }
 
 .merchandise p {
   color: gray;
   font-family: consolas, sans-serif;
+}
+
+.disclaimer {
+  text-align: center;
+  position: relative;
+  bottom: 265px;
+}
+.disclaimer p {
+  font-family: consolas, sans-serif;
+  font-size: 80%;
+  color: black;  
 }
 
 /* MOBILE STORE */
@@ -337,12 +349,6 @@ body {
   color: white;
 }
 
-.about-logo img {
-  padding-top: 30em;
-  padding-bottom: 50em;
-  margin: auto;
-}
-
 .about-inner h1 {
   padding-top: 5%;
 }
@@ -371,6 +377,24 @@ body {
   padding-bottom: 60em;
   margin: auto;
 }
+
+/* ABOUT LOGO GLITCH */
+.about-logo {
+  background: asset-data-url("logo-big-glitch.jpg") center;
+  background-repeat: no-repeat;
+  margin-top: 50em;
+  margin-bottom: 50em;
+}
+
+.about-logo img {
+  margin: auto;
+}
+
+#about-logo img:hover {
+  opacity: 0;
+}
+/* ABOUT LOGO GLITCH */
+
 /* END ABOUT */
 
 
@@ -398,27 +422,33 @@ body {
   }
 }
 
+/* CONTACT LOGO GLITCH */
+.contact-logo {
+  background: asset-data-url("logo-big-glitch.jpg") center;
+  background-repeat: no-repeat;
+}
+
+.contact-logo img {
+  margin: auto;
+}
+
+#contact-logo img:hover {
+  opacity: 0;
+}
+/* CONTACT LOGO GLITCH */
+
 .contact-inner {
   width: 90%;
   margin: auto;
   text-align: center;
 }
 
-.contact-logo img {
-  padding-bottom: 2%;
-  margin: auto;
-}
-
 .contact-inner {
   height: 100%;
 }
 
-.contact-logo{
-  height: 25%;
-}
-
 .contact-paragraph{
-  height: 75%;
+  height: 70%;
 }
 
 .contact-inner h1 {
