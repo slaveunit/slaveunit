@@ -1,8 +1,3 @@
-config.action_dispatch.default_headers = {
-    'X-Frame-Options' => 'ALLOWALL'
-}
-
-
 require File.expand_path('../boot', __FILE__)
 
 # Pick the frameworks you want:
@@ -33,4 +28,3 @@ module Nameofapp
     # config.i18n.default_locale = :de
   end
 end
-
