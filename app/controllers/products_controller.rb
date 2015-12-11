@@ -51,6 +51,29 @@ class ProductsController < ApplicationController
     end
   end
 
+
+
+
+
+  # PAPERCLIP
+  def create
+    @product = Product.create( product_params )
+  end
+
+  private
+
+  # Use strong_parameters for attribute whitelisting
+  # Be sure to update your create() and update() controller methods.
+
+  def product_params
+    params.require(:product).permit(:photo)
+  end
+
+
+
+
+
+
   # DELETE /products/1
   # DELETE /products/1.json
   def destroy
@@ -69,6 +92,6 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:name, :description, :image_url)
+      params.require(:product).permit(:name, :description, :image_url, :colour)
     end
 end
