@@ -3,12 +3,12 @@
 
 	<h1>New product</h1>
 
+
 	<!-- PAPERCLIP -->
 	<%= form_for @product, url: products_path, html: { multipart: true } do |form| %>
-	  <%= form.label :photo %><br>
-	  <%= form.file_field :photo %>
 	<% end %>
 	<!-- PAPERCLIP -->
+
 
 	<%= render 'form' %>
 
