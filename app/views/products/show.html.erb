@@ -1,33 +1,40 @@
-<p id="notice"><%= notice %></p>
+<div class="store-indivproduct">
+	<div class="store-indivproductinner">
 
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
+		<div class="store-indivproduct-notice">
+			<h1 id="notice"><%= notice %></h1>
+		</div>
 
-
-
-<!-- PAPERCLIP -->
-<strong>Photo:</strong>
-<%= image_tag @product.photo.url %>
-<!-- PAPERCLIP -->
+		<div class="store-indivproduct-name"=>
+		  <h1><%= @product.name %></h1>
+		</div>
 
 
+	<!-- PAPERCLIP -->
+		<div>
+			<h2>How it looks like:</h2>
+		</div>
+		<div class="store-indivproduct-photo">
+			<%= image_tag @product.photo.url %>
+		</div>
+	<!-- PAPERCLIP -->
 
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
 
-<p>
-  <strong>Image url:</strong>
-  <%= @product.image_url %>
-</p>
+		<div class="store-indivproduct-desc">
+		  <p><%= @product.description %></p>
+		</div>	
 
-<p>
-  <strong>Image url:</strong>
-  <%= @product.colour %>
-</p>
+		<div>
+		  <h2>Colour:</strong></h2>
+		</div>
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+		<div class="store-indivproduct-color">
+			<p><%= @product.colour %></p>
+		</div>
+
+		<div class="store-indivproduct-buttons">
+			<%= link_to 'Edit', edit_product_path(@product) %> |
+			<%= link_to 'Back', products_path %>
+		</div>
+	</div>
+</div>
