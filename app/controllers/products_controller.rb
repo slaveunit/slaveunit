@@ -23,6 +23,7 @@ class ProductsController < ApplicationController
 
   # POST /products
   # POST /products.json
+  #PAPERCLIP, added for: "params[:photo]"
   def create
     @product = Product.new(product_params, params[:photo] )
     respond_to do |format|
