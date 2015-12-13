@@ -1,4 +1,4 @@
-class AddPhotoColumnsToProducts < ActiveRecord::Migration
+class AddAttachmentPhotoToProducts < ActiveRecord::Migration
   
 
 # PAPERCLIP
