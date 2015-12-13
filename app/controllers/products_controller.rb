@@ -72,7 +72,7 @@ class ProductsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
 # PAPERCLIP added :photo
     def product_params
-      params.require(:product).permit(:name, :description, :image_url, :colour, :photo)
+      params.require(:product).permit(:name, :description, :image_url, :colour, :photo, :photo_file_name, :photo_file_size, :photo_content_type, :photo_updated_at)
     end
 
 end
