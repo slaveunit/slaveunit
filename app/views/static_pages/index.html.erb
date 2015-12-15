@@ -1,27 +1,14 @@
 <div class="store-wrapper">
-
 	<div class="store-inner">
 
+		<div class="featured-main">
+			<h2>Featured Product:</h2>
+			<p><%= @featured_product.name %></p>	  	
+	  		<%= image_tag("slave unit come at me t.jpg", :class => "img-responsive") %>   		
+	  		<p>Print Detail:</p>	  		
+	  		<%= image_tag("come at me detail.jpg", :class => "img-responsive") %> 	
+			<p>Available 2016</p>	
+		</div>
 
-
-<div class="featured-main">
-<h2>Featured Product:</h2>
-
-<p><%= @featured_product.name %></p>
-		  	
-	  		<%= image_tag("slave unit come at me t.jpg", :class => "img-responsive") %> 
-	  		<p>Print Detail:</p>
-	  		
-	  		<%= image_tag("come at me detail.jpg", :class => "img-responsive") %> 
-
-
-
-			
-	<p>Available 2016</p>	
-</div>
-
-
-
- </div><!-- end store inner -->
-  
+ </div><!-- end store inner --> 
 </div><!-- end store wrapper -->
