@@ -1,9 +1,8 @@
 class Product < ActiveRecord::Base
 
 # PAPERCLIP
-# product.photo.url added for Amazon
-has_attached_file :photo, default_url: "/images/:style/missing.png" 
 
+has_attached_file :photo, default_url: "/images/:style/missing.png"
 
 
 validates_attachment :photo,
