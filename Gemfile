@@ -53,3 +53,6 @@ gem 'coffee-script-source', '1.8.0'
 
 # For uploading pics
 gem "paperclip", "~> 4.3"
+
+# For Amazon AWS
+gem 'aws-sdk'
