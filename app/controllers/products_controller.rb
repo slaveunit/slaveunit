@@ -73,6 +73,7 @@ class ProductsController < ApplicationController
 # PAPERCLIP added :photo
 # PRICE added :decimal
     def product_params
-      params.require(:product).permit :name, :description, :image_url, :colour, :photo, :photo_file_name, :photo_file_size, :photo_content_type, :photo_updated_at, :price, :decimal, :precision, :scale
+      params.require(:product).permit :name, :description, :image_url, :colour, :photo , :photo_file_name, :photo_file_size, :photo_content_type, :photo_updated_at, :price, :decimal, :precision, :scale
+      product.photo.url #=> http://slaveunitapp.s3.amazonaws.com/...
     end
 end
