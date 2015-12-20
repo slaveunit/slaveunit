@@ -78,11 +78,11 @@ Rails.application.configure do
 
   #paperclip amazon aws
   config.paperclip_defaults = {
-  :storage => :s3,
-  :s3_credentials => {
-    :bucket => ENV['slaveunitapp'],
-    :access_key_id => ENV['AKIAJWTIHSEBZOPUQXVQ'],
-    :secret_access_key => ENV['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']
+    :storage => :s3,
+    :s3_credentials => {
+    :bucket => ENV['AWS_BUCKET'],
+    :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+    :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
   }
 }
 end
