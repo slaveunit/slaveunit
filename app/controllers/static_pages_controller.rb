@@ -1,9 +1,9 @@
 class StaticPagesController < ApplicationController
-  def index
-  end
 
+  # for the CAROUSEL
   def index
-  	@featured_product = Product.first
+    @products = Product.all
+    @featured_product = Product.first
   end
 
 end

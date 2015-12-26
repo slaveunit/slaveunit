@@ -244,27 +244,7 @@ body {
 
 
 
-/* FEATURE PAGE */
-.featured-main {
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
 
-.featured-main h2 {
-  padding-bottom: 1%;
-}
-
-.featured-main img {
-  padding-bottom: 5%;
-}
-
-.featured-main p {
-  font-family: consolas, sans-serif;
-  font-size: 150%;
-  color: black;     
-  
-}
-/* FEATURE PAGE */
 
 
 
@@ -385,6 +365,103 @@ padding-bottom: 1%;
 }
 /* END MOBILE STORE */
 /* END STORE */
+
+
+
+
+
+
+
+
+
+
+
+
+/* FEATURE PAGE */
+.featured-main {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.featured-main h1 {
+  font-family: 'Michroma', sans-serif;
+  font-size: 275%;
+  color: black; 
+  padding-bottom: 2%;
+}
+
+.featured-main h2 {
+  padding-bottom: 1%;
+  font-family: 'Share Tech Mono', sans-serif;
+  font-size: 275%;
+  color: red; 
+}
+
+.featured-main h3 {
+  font-family: consolas, sans-serif;
+  font-size: 150%;
+  color: black; 
+  padding-bottom: 2%;
+}
+
+.featured-main h4 {
+  font-family: 'Michroma', sans-serif;
+  font-size: 150%;
+  color: red; 
+}
+
+.featured-main p {
+  font-family: consolas, sans-serif;
+  font-size: 150%;
+  color: black;     
+}
+
+.featured-main img {
+  padding-bottom: 5%;
+}
+
+
+
+/* CAROUSEL */
+.carousel {
+  margin-top: 10%;
+}
+
+.carousel-control:hover {
+  opacity: 0;
+}
+
+.carousel-control {
+  width: 0;
+}
+
+.carousel-caption p {
+  font-family: 'Share Tech Mono', sans-serif;
+  font-size: 200%;
+  color: gray;
+}
+
+.carousel-indicators li {
+  background-color: black;
+}
+
+.carousel-indicators li.active {
+  background-color: red;
+}
+/* CAROUSEL */
+
+
+
+/* FEATURE PAGE */
+
+
+
+
+
+
+
+
+
 
 
 

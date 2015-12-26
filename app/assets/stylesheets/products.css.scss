@@ -5,14 +5,14 @@
 
 
 .store-indivproduct {
- width: 100%; 
-height: 1000px;
+ 	width: 100%; 
+	height: 1000px;
     overflow-y: scroll;
 }
 
 .store-indivproductinner {
- width: 90%; 
- margin: auto;
+ 	width: 90%; 
+ 	margin: auto;
 }
 
 .store-indivproduct-notice {
@@ -20,26 +20,25 @@ height: 1000px;
 }
 
 .store-indivproduct h2 {
-    font-family: 'Share Tech Mono', sans-serif;
-  font-size: 200%;
-  color: gray; 
+  	font-family: 'Share Tech Mono', sans-serif;
+  	font-size: 200%;
+  	color: gray; 
 }
 
 .store-indivproduct-name h1 {
     font-family: 'Michroma', sans-serif;
-  font-size: 275%;
-  color: black; 
-  padding-bottom: 3%;
-
+  	font-size: 275%;
+  	color: black; 
+  	padding-bottom: 3%;
 }
 
 .store-indivproduct-photo {
-padding-top: 5%;
+	padding-top: 5%;
 	padding-bottom: 5%;
 }
 
 .store-indivproduct-name store-inner h1 {
-  padding: 0;
+  	padding: 0;
 }
 
 .store-indivproduct-desc p {
