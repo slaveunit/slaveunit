@@ -1,13 +1,17 @@
 <div class="store-wrapper">
 	<div class="store-inner">
 
-
-
-
-
+<div class="index-description visible-lg-block visible-md-block">
+  <h1>SLAVE UNIT APPAREL</h1>
+  <p>is a clothing and accessories line inspired by digital art, electronic and industrial rock music and the wretchedness of existence.</p>
+</div>
+<div class="index-description-sm visible-sm-block visible-xs-block">
+  <h1>SLAVE UNIT APPAREL</h1>
+  <p>is a clothing and accessories line inspired by digital art, electronic and industrial rock music and the wretchedness of existence.</p>
+</div>
 <!-- CAROUSEL -->
 
-    <div class="carousel">
+    <div class="carousel visible-lg-block visible-md-block">
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -25,7 +29,7 @@
         <div class="carousel-inner" role="listbox">
           <% @products.each do |product| %>
       	    <div class="item<%= " active" if product == @products.first %>">
-      	      <%= image_tag (product.photo_file_name), :style => "margin: auto" %>
+      	      <%= image_tag (product.photo_file_name), :style => "margin: auto", :class => "img-responsive" %>
       	      <div class="carousel-caption">
       	        <p><%= product.name %></p> 
       	      </div>
@@ -52,14 +56,27 @@
 
 
 
-  	<div class="featured-main">
+  	<div class="featured-main visible-lg-block visible-md-block">
   		<h1>Featured Product:</h1>
   		<h2><%= @featured_product.name %></h2>	  	
   			<p><%= @featured_product.description %></p> 		
   			<h3>How it looks like:</h3>	  		
-  	  	<%= image_tag @featured_product.photo.url %>
+  	  	<%= image_tag @featured_product.photo.url, :class => "img-responsive" %>
   		<h4>Available 2016</h4>	
+      <a href="/static_pages/store/"><button type="button" class="btn btn-danger">PREVIEW WAVE 1</button></a>
   	</div>
+
+    <div class="featured-main-sm visible-sm-block visible-xs-block">
+      <h1>Featured Product:</h1>
+      <h2><%= @featured_product.name %></h2>      
+        <p><%= @featured_product.description %></p>     
+        <h3>How it looks like:</h3>       
+        <%= image_tag @featured_product.photo.url, :class => "img-responsive" %>
+      <h4>Available 2016</h4> 
+      <div class="featured-button-sm">
+        <a href="/static_pages/store/"><button type="button" class="btn btn-danger">PREVIEW WAVE 1</button></a>
+      </div>
+    </div>
 
  	</div><!-- end store inner --> 
 </div><!-- end store wrapper -->

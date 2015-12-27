@@ -226,6 +226,15 @@ body {
   margin-top: 19%;
 }
 
+.overlay-button {
+padding-top: 2%;
+  text-align: center;
+  z-index: 5;
+}
+
+.landing-button-sm {
+  padding-top: 10%;
+}
 /* END BGMOUSEMOVEPARALLAX */
 
 
@@ -474,6 +483,101 @@ font-size: 100%;
 .featured-main img {
   padding-bottom: 5%;
 }
+
+
+
+
+.featured-main-sm {
+  padding-top: 5%;
+  padding-bottom: 150%;
+}
+
+.featured-main-sm h1 {
+  font-family: 'Michroma', sans-serif;
+  font-size: 250%;
+  color: black; 
+  padding-bottom: 2%;
+}
+
+.featured-main-sm h2 {
+  padding-bottom: 1%;
+  font-family: 'Share Tech Mono', sans-serif;
+  font-size: 200%;
+  color: red; 
+}
+
+.featured-main-sm h3 {
+  font-family: consolas, sans-serif;
+  font-size: 125%;
+  color: black; 
+  padding-bottom: 2%;
+}
+
+.featured-main-sm h4 {
+  font-family: 'Michroma', sans-serif;
+  font-size: 150%;
+  color: red; 
+}
+
+.featured-main-sm p {
+  font-family: consolas, sans-serif;
+  font-size: 125%;
+  color: black;     
+}
+
+.featured-main-sm img {
+  padding-bottom: 5%;
+}
+
+.featured-button-sm {
+padding-top: 45%;
+ text-align: center;
+}
+
+
+
+
+
+.index-description {
+  width: 60%;
+  margin: auto;
+  padding-top: 1%;
+  text-align: center;
+}
+
+.index-description h1 {
+font-family: 'Share Tech Mono', sans-serif;
+font-size: 600%;
+}
+
+.index-description p {
+  font-size: 200%;
+  line-height: 100%;
+  color: black;
+}
+
+.index-description-sm {
+  margin: auto;
+  padding-top: 45%;
+  padding-bottom: 45%;
+  text-align: center;
+}
+
+.index-description-sm h1 {
+font-family: 'Share Tech Mono', sans-serif;
+font-size: 400%;
+}
+
+.index-description-sm p {
+  font-size: 150%;
+  line-height: 100%;
+  color: black;
+}
+
+
+
+
+
 
 
 
