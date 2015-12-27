@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-	background-color: white;
+	background-color: black;
 }
 
 .index-wrapper {
@@ -289,26 +289,6 @@ padding-bottom: 1%;
   margin: auto;
 }
 
-.store-inner h1 {
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-
-.store-title h1 {
-  padding-bottom: 0;
-  color: black;
-}
-
-.store-title h2 {
-  color: gray;
-}
-
-.store-inner h3 {
-  padding-bottom: 5%;
-  text-align: left;
-  color: red;
-}
-
 .store-item {
   padding-bottom: 25%;
   text-align: center;
@@ -324,15 +304,37 @@ padding-bottom: 1%;
   padding-bottom: 30em;
 }
 
-.merchandise p {
-  color: gray;
-  font-family: consolas, sans-serif;
-}
-
 .disclaimer {
   text-align: center;
   position: relative;
   bottom: 265px;
+}
+
+.store-inner h1 {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color: black;
+}
+
+.store-item h2 {
+  font-family: 'Share Tech Mono', sans-serif;
+  font-size: 275%;
+  color: gray;
+}
+
+.store-inner h3 {
+  padding-bottom: 5%;
+  text-align: left;
+  color: red;
+}
+
+.store-item h6{
+  color: red;
+}
+
+.merchandise p {
+  color: gray;
+  font-family: consolas, sans-serif;
 }
 
 .disclaimer p {
@@ -341,12 +343,32 @@ padding-bottom: 1%;
   color: black;  
 }
 
+.disclaimer {
+  padding-top: 95%;
+}
+
+
+
+
+
 
 /* MOBILE STORE */
 .store-title-sm {
   padding-top: 50%;
   padding-bottom: 80%;
 }
+
+.merchandise-sm {
+  padding-bottom: 100%;
+}
+
+.disclaimer-sm {
+  padding-bottom: 150%;
+  color: black;
+  text-align: center;
+}
+
+
 
 .store-title-sm h2, h3 {
   text-align: center;
@@ -362,6 +384,39 @@ padding-bottom: 1%;
   text-align: center;
   font-size: 220%;
   color: black;
+}
+
+.store-item-sm {
+  text-align: center;
+  margin: auto; 
+  padding-bottom: 40%;
+}
+
+.store-item-sm h2{
+font-family: 'Share Tech Mono', sans-serif;
+  font-size: 225%;
+  color: black;
+}
+
+.store-item-sm h6{
+  color: red;
+}
+
+.store-item-sm p {
+   color: gray;
+  font-family: consolas, sans-serif;
+  font-size: 140%;
+}
+
+.disclaimer-sm p{
+font-size: 100%;
+  color: black;
+}
+
+.store-item-sm img {
+  padding-top: 10%;
+  padding-bottom: 10%;
+
 }
 /* END MOBILE STORE */
 /* END STORE */
