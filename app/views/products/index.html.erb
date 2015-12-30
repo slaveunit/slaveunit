@@ -2,32 +2,61 @@
   <div class="store-inner">
     
     <div class="store-title visible-lg-block visible-md-block">
-          <h1>SLAVE UNIT APPAREL</h1>
-          <h2>STORE</h2>
-          <h3>Available 2016</h3>
-    </div>
-    <div class="store-table">
-      <table>
-        <thead>
-          <tr>
-            <th class="store-product-name">PRODUCT NAME</th>
-            <th>PRODUCT DESCRIPTION</th>
-            <th>COLOUR</th>
-            <th>PRICE</th>
-            <th colspan="3"></th>
-          </tr>
-        </thead>
+      <h1>SLAVE UNIT APPAREL</h1>
+      <h2>PRODUCT INDEX</h2>
+      <h3>Available 2016</h3>
+      
+      <div class="store-table">
+        <table>
+          <thead>
+            <tr>
+              <th class="store-product-name">PRODUCT NAME</th>
+              <th>PRODUCT DESCRIPTION</th>
+              <th>COLOUR</th>
+              <th>PRICE</th>
+              <th>IMAGE</th>
+              <th>ACTIONS</th>
+              <th colspan="3"></th>
+            </tr>
+          </thead>
 
-        <tbody>
-          <% @products.each do |product| %>
-<!-- redirect to _product -->
-            <%= render product %>
-<!-- redirect to _product -->
-          <% end %>
-        </tbody>
-      </table>
-    </div>
-    <%= link_to 'New Product', new_product_path %>
+          <tbody>
+            <% @products.each do |product| %>
+<!-- redirect to _product in views -->
+              <%= render product %>
+<!-- redirect to _product in views -->
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+      <%= link_to 'New Product', new_product_path %>
 
+    </div><!-- end store-title -->
+
+<div class="products-index-sm">
+      <div class="products-index-title-sm visible-xs-block visible-sm-block"> 
+      <h1>SLAVE UNIT APPAREL</h1>
+      <h2>PRODUCT INDEX</h2>
+      <h3>Available 2016</h3>
+      
+      <div class="products-index-sm">
+        
+
+          <tbody>
+            <% @products.each do |product| %>
+<!-- redirect to _product in views -->
+              <%= render product %>
+<!-- redirect to _product in views -->
+            <% end %>
+          </tbody>
+        
+      </div>
+      <%= link_to 'New Product', new_product_path %>
+    </div><!-- end store-title-sm --> 
+</div>
   </div><!-- end store inner -->
+
+
 </div><!-- end store wrapper -->
+
+

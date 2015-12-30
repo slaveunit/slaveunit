@@ -70,7 +70,7 @@ p {
 }
 
 .menu {
-    width: 70%;
+    width: 80%;
     display: inline-block;
 }
 
@@ -86,6 +86,27 @@ p {
 .nav a {
     transition: color 950ms;
 }
+
+.navbar-collapse form {
+  padding-top: 13px;
+  padding-left: 50px;
+}
+
+/* SEARCH BOX */
+#nav > div.container-fluid.menu > div.navbar-collapse.collapse > ul > li:nth-child(4) > form > input[type="submit"]:nth-child(3) {
+  background-color: gray;
+  border-color: gray;
+  color: white;
+  font-family: 'Michroma', sans-serif;
+}
+
+#q {
+  background-color: black;
+  border-color: lightgray;
+  color: yellow;
+  font-family: 'Share Tech Mono', sans-serif;
+}
+/* SEARCH BOX */
 /* NAVBAR */
 
 

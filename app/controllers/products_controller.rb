@@ -4,7 +4,26 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    @products = Product.all
+
+# FOR SEARCH FORM TO USE LIKE IN DEVELOPMENT
+    if Rails.env.development?
+      if params[:q]
+        search_term = params[:q]
+        @products = Product.where("name LIKE ?", "%#{search_term}%")
+      else
+        @products = Product.all
+      end
+    end
+# FOR SEARCH FORM TO USE ILIKE IN PRODUCTION
+    if Rails.env.production?
+      if params[:q]
+        search_term = params[:q]
+        @products = Product.where("name ILIKE ?", "%#{search_term}%")
+      else
+        @products = Product.all
+      end
+    end
+
   end
 
   # GET /products/1

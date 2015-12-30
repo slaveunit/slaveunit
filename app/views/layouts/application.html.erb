@@ -40,6 +40,21 @@
                 <li><a href="/static_pages/store"><span class="glyphicon glyphicon-shopping-cart"></a></li>
                 <li><a href="/static_pages/about"><span class="glyphicon glyphicon-info-sign"></a></li>
                 <li><a href="/static_pages/contact"><span class="glyphicon glyphicon-phone-alt"></a></li>
+
+
+<!-- SEARCH BOX -->
+                <li>
+                <%= form_tag("/products", method: "get") do %>
+                  <%= text_field_tag(:q) %>
+                  <%= submit_tag("SEARCH") %>
+                <% end %>
+                </li>
+<!-- SEARCH BOX -->
+
+
+
+
+
               </ul>
             </div>
           </div><!-- end container-fluid menu --> 

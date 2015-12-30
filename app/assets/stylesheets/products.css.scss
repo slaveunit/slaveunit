@@ -84,6 +84,7 @@ th {
 	font-family: 'Share Tech Mono', sans-serif;
 	font-size: 200%;	
 	padding-bottom: 3%;
+	line-height: 100%;
 }
 
 td {
@@ -92,5 +93,68 @@ td {
 
 .store-product-name {
 	width: 30%;
-
 }
+
+
+
+/* PRODUCTS INDEX MOBILE */
+.products-index-sm {
+	padding-top: 45%;
+	padding-bottom: 100%;
+}
+
+.products-index-title-sm {
+	padding-top: 25%;
+	padding-bottom: 50%;
+}
+
+.products-index-title-sm{
+	padding-top: 25%;
+	padding-bottom: 50%;
+}
+
+.products-index-title-sm h1 {
+	font-family: 'michroma', sans-serif;
+	font-size: 225%;	
+	color: black;
+}
+
+.products-index-title-sm h2 {
+	font-family: 'michroma', sans-serif;
+	font-size: 150%;	
+	color: gray;
+}
+
+.products-index-title-sm h3 {
+text-align: left;
+}
+
+
+
+.product-index-sm h1 {
+	font-family: 'Share Tech Mono', sans-serif;
+	font-size: 225%;	
+	color: black;
+}
+
+.product-index-sm h3 {
+	font-family: 'verdana', sans-serif;
+	font-size: 125%;	
+	color: black;
+	text-align: left;
+}
+
+.product-index-sm p {
+	font-family: 'verdana', sans-serif;
+	font-size: 125%;	
+	color: black;
+}
+
+.product-index-sm h5 {
+	text-align: center;
+	font-family: 'Share Tech Mono', sans-serif;
+	font-size: 200%;
+	color: black;
+}
+
+/* PRODUCTS INDEX MOBILE */
