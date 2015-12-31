@@ -789,4 +789,33 @@ body {
   color: white;
   font-size: 170%;
 }
+
+/* EMAIL FORM */
+.panel {
+  background-color: black;
+  border-color: black;
+  width: 75%;
+  margin: auto;
+}
+
+#name, #email, #message {
+  background-color: black;
+  font-family: consolas, sans-serif;
+  font-size: 150%;
+  text-align: center;
+  color: yellow;
+}
+
+/* THANK YOU */
+.panel {
+  text-align: center;
+}
+
+.panel-body-sm {
+padding-top: 10%;
+  
+}
+/* THANK YOU */
+
+
 /* END CONTACT */

@@ -78,16 +78,27 @@ Rails.application.configure do
 
   #paperclip amazon aws
   config.paperclip_defaults = {
-    :storage => :s3,
-    :region => ENV['REGION'],
-    :s3_region => ENV['REGION'],
-    :s3_credentials => {
-    :bucket => ENV['S3_BUCKET_NAME'],
-    :access_key_id => ENV['ACCESS_KEY_ID'],
-    :secret_access_key => ENV['SECRET_ACCESS_KEY'],
-    :s3_host_name => 's3.amazonaws.com',
-    :s3_endpoint => 's3.amazonaws.com',
-    :url => ":s3_domain_url"
+      :storage => :s3,
+      :region => ENV['REGION'],
+      :s3_region => ENV['REGION'],
+      :s3_credentials => {
+      :bucket => ENV['S3_BUCKET_NAME'],
+      :access_key_id => ENV['ACCESS_KEY_ID'],
+      :secret_access_key => ENV['SECRET_ACCESS_KEY'],
+      :s3_host_name => 's3.amazonaws.com',
+      :s3_endpoint => 's3.amazonaws.com',
+      :url => ":s3_domain_url"
+    }
   }
-}
+
+  ActionMailer::Base.smtp_settings = {
+    :address => 'smtp.sendgrid.net',
+    :port => '587',
+    :authentication => :plain,
+    :user_name => ENV['SENDGRID_USERNAME'],
+    :password => ENV['SENDGRID_PASSWORD'],
+    :domain => 'heroku.com'
+    :enable_starttls_auto => true
+  }
+
 end

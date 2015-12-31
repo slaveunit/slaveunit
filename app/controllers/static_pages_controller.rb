@@ -10,4 +10,14 @@ class StaticPagesController < ApplicationController
     @products = Product.all
   end
 
+  def thank_you
+  	@name = params[:name]
+  	@email = params[:email]
+  	@message = params[:message]
+  	ActionMailer::Base.mail(:from => @email, 
+  		:to => 'slav3unit@gmail.com', 
+  		:subject => "Slave Unit Apparel Inquiry", 
+  		:body => @message).deliver_now
+  end 
+
 end
