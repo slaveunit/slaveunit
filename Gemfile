@@ -8,6 +8,7 @@ gem 'rails', '~> 4.2', '>= 4.2.5'
 group :production do
 	gem 'rails_12factor'
 	gem 'pg'
+	gem 'thin' 
 end
 
 # Added for Heroku
