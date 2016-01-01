@@ -18,6 +18,7 @@ class StaticPagesController < ApplicationController
   		:to => 'slav3unit@gmail.com', 
   		:subject => "Slave Unit Apparel Inquiry", 
   		:body => @message).deliver_now
-  end 
+  	UserMailer.contact_form(@email, @name, @message).deliver_now
+  end  
 
 end
