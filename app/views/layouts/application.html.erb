@@ -56,9 +56,45 @@
 
 
               </ul>
+
+
+
+
+
+<!-- DEVISE gem login out -->
+              <ul class="nav pull-right">
+                <li style="padding-top:7px;">
+                  <% if user_signed_in? %>
+                    <%= link_to('', destroy_user_session_path, :class => "glyphicon glyphicon-pencil", :method => :delete) %>
+                    
+                    <% else %>
+                    <%= link_to('', new_user_session_path, :class => "glyphicon glyphicon-pencil") %>
+                  <% end %>
+                </li>
+              </ul>
+<!-- DEVISE gem login out -->
+
+
+
+
             </div>
           </div><!-- end container-fluid menu --> 
   <!-- END NAVBAR -->
+
+
+
+
+
+
+  <!-- DEVISE -->
+          <p class="notice"><%= notice %></p>
+          <p class="alert"><%= alert %></p>
+  <!-- END DEVISE -->
+
+
+
+
+
 
   <!-- FOOTER -->
           <footer class="visible-lg-block visible-md-block" id="footer-lg">

@@ -107,7 +107,49 @@ p {
   font-family: 'Share Tech Mono', sans-serif;
 }
 /* SEARCH BOX */
+
+
+/* SIGN-IN ICON */
+#nav > div.container-fluid.menu > div.navbar-collapse.collapse > ul.nav.pull-right > li > a { 
+    color: red;
+}
+
+#nav > div.container-fluid.menu > div.navbar-collapse.collapse > ul.nav.pull-right > li > a:hover { 
+    background-color: black;
+    color: white;
+}
+/* SIGN-IN ICON */
+
+
 /* NAVBAR */
+
+
+
+
+
+
+/* AUTHENTICATION */
+.authentication {
+  padding-top: 8%;
+  width: 90%;
+  margin: auto;
+}
+
+.authentication .field {
+  color: gray;
+}
+
+body > div.authentication > a:nth-child(5) {
+  color: gray;
+}
+
+.notice {
+  width: 90%;
+  margin: auto;
+  text-align: right;
+  color: yellow;
+}
+/* AUTHENTICATION */
 
 
 
