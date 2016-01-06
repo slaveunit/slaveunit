@@ -86,10 +86,20 @@
 
 
 
-  <!-- DEVISE -->
-          <p class="notice"><%= notice %></p>
-          <p class="alert"><%= alert %></p>
-  <!-- END DEVISE -->
+  <!-- DEVISE  notice and alert -->
+          <% if notice %>
+            <div class="alert alert-warning alert-dismissible" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <%= notice %>
+            </div>
+          <% end %>
+          <% if alert %>
+            <div class="alert alert-warning alert-dismissible" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <strong>ACCESS DENIED.</strong><%= alert %>
+            </div>
+          <% end %>
+  <!-- END DEVISE notice and alert -->
 
 
 

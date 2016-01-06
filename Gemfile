@@ -57,4 +57,8 @@ gem 'paperclip', :git=> 'https://github.com/thoughtbot/paperclip', :ref => '523b
 # PAPERCLIP Amazon AWS
 gem 'aws-sdk'
 
+# AUTHENTICATION
 gem 'devise'
+
+# AUTHORIZATION
+gem 'cancancan'
