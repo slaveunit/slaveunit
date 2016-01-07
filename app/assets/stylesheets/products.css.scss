@@ -47,8 +47,13 @@
 .store-indivproduct-desc p {
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 150%;
-	padding-bottom: 3%;
+	padding-bottom: 0;
 	color: black;
+}
+
+.store-indivproduct-desc h3 {
+    text-align: left;
+    padding-bottom: 3%;
 }
 
 .store-indivproduct-color p {
