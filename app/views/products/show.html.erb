@@ -15,7 +15,7 @@
 			<h2>How it looks like:</h2>
 		</div>
 		<div class="store-indivproduct-photo">
-			<%= image_tag @product.photo.url %>
+			<%= image_tag @product.photo.url, :class => "img-responsive" %>
 		</div>
 	<!-- PAPERCLIP -->
 
@@ -39,8 +39,21 @@
 		<div class="store-indivproduct-price">
 			<p>US$<%= @product.price %></p>
 		</div>
+<!-- PRICE -->
 
-
+<!-- SIZE AND ADD TO CART BUTTONS -->
+		<div class="btn-group">
+	  		<button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	    		Sizes <span class="caret"></span>
+	  		</button>
+			<ul class="dropdown-menu">
+			<li><a href="#">SM</a></li>
+			<li><a href="#">MD</a></li>
+			<li><a href="#">LG</a></li>
+			</ul>
+			<button type="button" class="btn btn-default btn-sm">Add to Cart</button>
+		</div>
+<!-- SIZE AND ADD TO CART BUTTONS -->
 
 		<div class="store-indivproduct-buttons">
 			<%= link_to 'Edit', edit_product_path(@product) %> |
