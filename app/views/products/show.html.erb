@@ -56,6 +56,49 @@
 		</div>
 <!-- SIZE AND ADD TO CART BUTTONS -->
 
+<!-- RATY average rating -->
+			<p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div></p>
+<!-- RATY average rating -->
+
+<!-- COMMENTS -->
+		<% if signed_in? %>
+			<h4>Review this:</h4>
+			<%= form_for([@product, @product.comments.build]) do |f| %>
+				<p>
+					<%= f.label :body, "Comments" %><br>
+					<%= f.text_area :body %>
+				</p>	
+
+<!-- RATY -->
+				<p>
+					<div class="rating"></div>
+				</p>
+<!-- RATY -->
+
+				<p>
+					<%= f.submit "Submit" %>
+				</p>
+			<% end %>
+		<% end %>
+
+<!-- RATY -->
+		<div class="product_reviews">
+			<% @comments.each do |comment| %>
+				<div class="row">
+					<hr>
+					<p><%= comment.user.first_name %> <small><em><%= " #{time_ago_in_words(comment.created_at)} ago" %></em></small>
+					</p>
+					
+					<div class="rated" data-score="<%= comment.rating %>"></div>
+
+					<p><%= comment.body %></p>
+				</div>
+
+			<% end %>
+		</div>
+<!-- RATY -->
+<!-- COMMENTS -->
+
 		<div class="store-indivproduct-buttons">
 			<%= link_to 'Edit', edit_product_path(@product) %> |
 			<%= link_to 'Back', products_path %>
