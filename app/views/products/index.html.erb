@@ -33,27 +33,27 @@
 
     </div><!-- end store-title -->
 
-<div class="products-index-sm">
-      <div class="products-index-title-sm visible-xs-block visible-sm-block"> 
-      <h1>SLAVE UNIT APPAREL</h1>
-      <h2>PRODUCT INDEX</h2>
-      <h3>Available 2016</h3>
-      
-      <div class="products-index-sm">
-        
+    <div class="products-index-sm">
+          <div class="products-index-title-sm visible-xs-block visible-sm-block"> 
+          <h1>SLAVE UNIT APPAREL</h1>
+          <h2>PRODUCT INDEX</h2>
+          <h3>Available 2016</h3>
+          
+          <div class="products-index-sm">
+            
 
-          <tbody>
-            <% @products.each do |product| %>
-<!-- redirect to _product in views -->
-              <%= render product %>
-<!-- redirect to _product in views -->
-            <% end %>
-          </tbody>
-        
-      </div>
-      <%= link_to 'New Product', new_product_path %>
-    </div><!-- end store-title-sm --> 
-</di  v>
+              <tbody>
+                <% @products.each do |product| %>
+    <!-- redirect to _product in views -->
+                  <%= render product %>
+    <!-- redirect to _product in views -->
+                <% end %>
+              </tbody>
+            
+          </div>
+          <%= link_to 'New Product', new_product_path %>
+        </div><!-- end store-title-sm --> 
+    </div>
   </div><!-- end store inner -->
 
 

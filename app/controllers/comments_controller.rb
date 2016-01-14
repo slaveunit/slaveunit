@@ -5,7 +5,7 @@ class CommentsController < ApplicationController
 		@comment = @product.comments.new(comment_params)
 		@comment.user = current_user
 
-		#VALIDATION
+	# VALIDATION
 		respond_to do |format|
 			if @comment.save
 				format.html { redirect_to @product, notice: "Review creation: SUCCESS"}
@@ -15,14 +15,19 @@ class CommentsController < ApplicationController
 				format.json { render json: @comment.errors, status: :unprocessable_entity }
 			end
 		end
-		#VALIDATION
-
-		
+	# VALIDATION
+	
 	end
 
+	# DELETE COMMENT
 	def destroy
+		@comment = Comment.find(params[:id])
+		product = @comment.product
+		@comment.destroy
+		redirect_to product
 	end
-
+	# DELETE COMMENT
+	
 private
 
 	def comment_params
