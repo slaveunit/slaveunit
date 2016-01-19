@@ -1,14 +1,13 @@
 Rails.application.routes.draw do
-  devise_for :users
-  resources :users
-  resources :products
-  
+ 
+
 #COMMENTS
   resources :products do
     resources :comments
   end
 #COMMENTS
-
+  devise_for :users
+  resources :users 
   resources :orders, only: [:index, :show, :create, :destroy]
 
   get 'static_pages/store'
