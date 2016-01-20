@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
  
-
 #COMMENTS
   resources :products do
     resources :comments
