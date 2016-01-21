@@ -1,7 +1,9 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
-  
+# So admin abilities are applied to only these.  
+# So public can view product without signing in.
+  load_and_authorize_resource :only => [:new, :update, :create]
 
  
 
