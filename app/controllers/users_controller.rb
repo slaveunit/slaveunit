@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   # This line to force sign-in/authenticate if not signed-in.
   before_filter :authenticate_user!
   
-  load_and_authorize_resource
+ 
 
   # GET /users
   # GET /users.json
@@ -14,7 +14,8 @@ class UsersController < ApplicationController
 
   # GET /users/1
   # GET /users/1.json
-  def show
+  def show 
+
   end
 
   # GET /users/new

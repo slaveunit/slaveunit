@@ -29,7 +29,10 @@
           </tbody>
         </table>
       </div>
+
+      <% if current_user.try(:admin?) %>
       <%= link_to 'New Product', new_product_path %>
+      <% end %>
 
     </div><!-- end store-title -->
 
@@ -51,7 +54,11 @@
               </tbody>
             
           </div>
+
+          <% if current_user.try(:admin?) %>
           <%= link_to 'New Product', new_product_path %>
+          <% end %>
+
         </div><!-- end store-title-sm --> 
     </div>
   </div><!-- end store inner -->

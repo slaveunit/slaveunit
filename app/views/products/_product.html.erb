@@ -11,8 +11,11 @@
 	<td><%= image_tag (product.photo), :style => "margin: auto", :class => "img-responsive" %></td>
 	
 	<td><%= link_to 'Show', product %></td>
+
+	<% if current_user.try(:admin?) %>
 	<td><%= link_to 'Edit', edit_product_path(product) %></td>
 	<td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	<% end %>
 </tr>
 </div>
 
@@ -31,7 +34,10 @@
 	<p><%= image_tag (product.photo), :style => "margin: auto", :class => "img-responsive" %></p>
 	
 	<p><%= link_to 'Show', product %></p>
+
+	<% if current_user.try(:admin?) %>
 	<p><%= link_to 'Edit', edit_product_path(product) %></p>
 	<p><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+	<% end %>
 
 </div>
