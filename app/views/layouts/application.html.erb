@@ -37,9 +37,10 @@
               </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li><a href="/static_pages/store"><span class="glyphicon glyphicon-shopping-cart"></a></li>
+                <li><a href="/products"><span class="glyphicon glyphicon-eye-open"></a></li>
                 <li><a href="/static_pages/about"><span class="glyphicon glyphicon-info-sign"></a></li>
                 <li><a href="/static_pages/contact"><span class="glyphicon glyphicon-phone-alt"></a></li>
+                <li><a href="/"><span class="glyphicon glyphicon-shopping-cart"></a></li>
 
 
 <!-- SEARCH BOX -->
@@ -65,10 +66,10 @@
               <ul class="nav pull-right">
                 <li style="padding-top:7px;">
                   <% if user_signed_in? %>
-                    <%= link_to('', destroy_user_session_path, :class => "glyphicon glyphicon-pencil", :method => :delete) %>
+                    <%= link_to('', destroy_user_session_path, :class => "glyphicon glyphicon-log-out", :method => :delete) %>
                     
                     <% else %>
-                    <%= link_to('', new_user_session_path, :class => "glyphicon glyphicon-pencil") %>
+                    <%= link_to('', new_user_session_path, :class => "glyphicon glyphicon-log-in") %>
                   <% end %>
                 </li>
               </ul>

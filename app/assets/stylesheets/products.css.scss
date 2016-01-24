@@ -92,6 +92,13 @@ th {
 
 td {
 	padding-bottom: 1%;
+
+}
+
+td a:hover { 
+    background-color: white;
+    text-decoration: none;
+    color: inherit;
 }
 
 .store-product-image {
@@ -121,7 +128,14 @@ td {
 }
 
 .store-indivproductinner p {
+ 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
  	color: black;
+}
+
+.store-indivproductinner h4 {
+ 	font-family: 'Share Tech Mono', sans-serif;
+	font-size: 225%;	
+	color: black;
 }
 
 #comment_body, #comment_rating {
@@ -130,10 +144,13 @@ td {
 
 .product_reviews p {
 	color: black;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 150%;
+	color: black;
 }
 
 .rated {
-	padding-bottom: 3%;
+	padding-bottom: 1%;
 }
 /* COMMENT */
 
