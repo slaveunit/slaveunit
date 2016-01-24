@@ -10,15 +10,13 @@ load_and_authorize_resource
   # GET /users.json
   def index
     @users = User.all
-
-
-
-
   end
 
   # GET /users/1
   # GET /users/1.json
   def show 
+# BROKEN To display comments made in user profile
+    @commentsmade = Comment.all
   end
 
   # GET /users/new
