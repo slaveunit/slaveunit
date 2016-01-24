@@ -1,66 +1,68 @@
 <% if can? :update, :only => User %>
-<div class="about-wrapper">
+	<div class="about-wrapper">
 
-<div class="about-inner visible-md-block visible-lg-block">
-	<h1>SLAVE UNIT APPAREL</h1>
-	<h2>CUSTOMER PROFILE</h2>
+	<div class="about-inner visible-md-block visible-lg-block">
+		<h1>SLAVE UNIT APPAREL</h1>
+		<h2>CUSTOMER PROFILE</h2>
 
-	<p id="notice"><%= notice %></p>
+		<p id="notice"><%= notice %></p>
 
-	<p>
-	  <strong>Name:</strong>
-	  <%= @user.first_name %>
-	  <%= @user.last_name %>
-	</p>
+		<p>
+		  <strong>Name:</strong>
+		  <%= @user.first_name %>
+		  <%= @user.last_name %>
+		</p>
 
-	<p>
-	  <strong>Phone Number:</strong>
-	</p>
+		<p>
+		  <strong>Phone Number:</strong>
+		</p>
 
-	<p>
-	  <strong>Email:</strong>
-	  <%= @user.email %>
-	</p>
+		<p>
+		  <strong>Email:</strong>
+		  <%= @user.email %>
+		</p>
 
-	<p>
-	  <strong>Order History:</strong>
-	</p>
+		<p>
+		  <strong>Order History:</strong>
+		</p>
 
+<!-- BROKEN -->
 
-	<%= link_to 'Edit', edit_user_path(@user) %> |
-	<%= link_to 'Back', users_path %>
+<!-- BROKEN -->
+			
+		<%= link_to 'Edit', edit_user_path(@user) %> |
+		<%= link_to 'Back', users_path %>
 
-</div>
+	</div>
 
-<div class="about-inner-sm visible-xs-block visible-sm-block">
-	<h1>SLAVE UNIT APPAREL</h1>
-	<h2>CUSTOMER PROFILE</h2>
-	<p id="notice"><%= notice %></p>
+	<div class="about-inner-sm visible-xs-block visible-sm-block">
+		<h1>SLAVE UNIT APPAREL</h1>
+		<h2>CUSTOMER PROFILE</h2>
+		<p id="notice"><%= notice %></p>
 
-	<p>
-	  <strong>Name:</strong>
-	  <%= @user.first_name %>
-	  <%= @user.last_name %>
-	</p>
+		<p>
+		  <strong>Name:</strong>
+		  <%= @user.first_name %>
+		  <%= @user.last_name %>
+		</p>
 
-	<p>
-	  <strong>Phone Number:</strong>
-	</p>
+		<p>
+		  <strong>Phone Number:</strong>
+		</p>
 
-	<p>
-	  <strong>Email:</strong>
-	  <%= @user.email %>
-	</p>
+		<p>
+		  <strong>Email:</strong>
+		  <%= @user.email %>
+		</p>
 
-	<p>
-	  <strong>Order History:</strong>
-	</p>
+		<p>
+		  <strong>Order History:</strong>
+		</p>
 
+		<%= link_to 'Edit', edit_user_path(@user) %> |
+		<%= link_to 'Back', users_path %>
 
-	<%= link_to 'Edit', edit_user_path(@user) %> |
-	<%= link_to 'Back', users_path %>
+	</div>
 
-</div>
-
-</div><!-- end about-wrapper -->
+	</div><!-- end about-wrapper -->
 <% end %>

@@ -17,7 +17,10 @@ class Product < ActiveRecord::Base
 
 	#VALIDATION
 	validates :name, presence: true
-	validates_attachment :photo,
+	validates :description, presence: true
+	validates :colour, presence: true
+	validates :price, presence: true
+	validates_attachment :photo, presence: true,
 	  content_type: { content_type: ["image/jpeg", "image/gif", "image/png"] }
 	#VALIDATION
 

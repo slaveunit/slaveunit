@@ -94,9 +94,16 @@ td {
 	padding-bottom: 1%;
 }
 
-.store-product-name {
+.store-product-image {
 	width: 30%;
 }
+
+.store-product-image, store-product-desc, store-product-colour, store-product-actions {
+	width: 17%;
+}
+ 
+
+
 
 .store-indivproductinner .btn-group {
 	padding-bottom: 3%;
