@@ -56,6 +56,17 @@
 
 
 
+
+<!-- USER Icon -->
+                <li>
+                  <% if user_signed_in? %>
+                    <%= link_to current_user do %>
+                      <i class="glyphicon glyphicon-user"></i>
+                    <% end %>
+                  <% end %>
+                </li>
+<!-- USER Icon -->
+
               </ul>
 
 
@@ -67,13 +78,16 @@
                 <li style="padding-top:7px;">
                   <% if user_signed_in? %>
                     <%= link_to('', destroy_user_session_path, :class => "glyphicon glyphicon-log-out", :method => :delete) %>
-                    
+
+                  
+    
                     <% else %>
                     <%= link_to('', new_user_session_path, :class => "glyphicon glyphicon-log-in") %>
                   <% end %>
                 </li>
               </ul>
 <!-- DEVISE gem login out -->
+
 
 
 

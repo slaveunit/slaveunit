@@ -109,6 +109,16 @@ p {
 /* SEARCH BOX */
 
 
+#nav > div.container-fluid.menu > div.navbar-collapse.collapse > ul.nav.navbar-nav > li:nth-child(6) > a > i {
+     color: red;
+}
+
+#nav > div.container-fluid.menu > div.navbar-collapse.collapse > ul.nav.navbar-nav > li:nth-child(6) > a > i:hover {
+     background-color: black;
+    color: white;
+}
+
+
 /* SIGN-IN ICON */
 #nav > div.container-fluid.menu > div.navbar-collapse.collapse > ul.nav.pull-right > li > a { 
     color: red;
