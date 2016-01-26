@@ -35,6 +35,8 @@ load_and_authorize_resource
       if @user.save
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.json { render :show, status: :created, location: @user }
+# SENDGRID Deliver the signup email
+        UserNotifier.send_signup_email(@user).deliver
       else
         format.html { render :new }
         format.json { render json: @user.errors, status: :unprocessable_entity }
