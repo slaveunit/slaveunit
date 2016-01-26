@@ -92,6 +92,10 @@ p {
   padding-left: 50px;
 }
 
+#nav > div.container-fluid.menu > div.navbar-collapse.collapse.in {
+  text-align: right;
+}
+
 /* SEARCH BOX */
 #nav > div.container-fluid.menu > div.navbar-collapse.collapse > ul > li:nth-child(4) > form > input[type="submit"]:nth-child(3) {
   background-color: gray;
@@ -109,6 +113,7 @@ p {
 /* SEARCH BOX */
 
 
+/* USER ICON */
 #nav > div.container-fluid.menu > div.navbar-collapse.collapse > ul.nav.navbar-nav > li:nth-child(6) > a > i {
      color: red;
 }
@@ -117,6 +122,7 @@ p {
      background-color: black;
     color: white;
 }
+/* USER ICON */
 
 
 /* SIGN-IN ICON */

@@ -30,8 +30,10 @@
 
 <!-- BROKEN -->
 			
-		<%= link_to 'Edit', edit_user_path(@user) %> |
-		<%= link_to 'Back', users_path %>
+		<%= link_to 'Edit', edit_user_path(@user) %> 
+		<% if signed_in? && current_user.admin? %>
+			|<%= link_to 'Back', users_path %>
+		<% end %>
 
 	</div>
 
@@ -59,8 +61,10 @@
 		  <strong>Order History:</strong>
 		</p>
 
-		<%= link_to 'Edit', edit_user_path(@user) %> |
-		<%= link_to 'Back', users_path %>
+		<%= link_to 'Edit', edit_user_path(@user) %> 
+		<% if signed_in? && current_user.admin? %>
+			|<%= link_to 'Back', users_path %>
+		<% end %>
 
 	</div>
 
