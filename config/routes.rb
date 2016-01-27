@@ -1,13 +1,26 @@
 Rails.application.routes.draw do
  
+  get 'order_items/create'
+
+  get 'order_items/update'
+
+  get 'order_items/destroy'
+
+  get 'carts/show'
+
 #COMMENTS
   resources :products do
-    resources :comments
+  resources :comments
   end
 #COMMENTS
   devise_for :users
   resources :users 
   resources :orders, only: [:index, :show, :create, :destroy]
+
+# SHOPPING CART
+  resource :cart, only: [:show]
+  resources :order_items, only: [:create, :update, :destroy]
+# SHOPPING CART
 
   get 'static_pages/store'
 

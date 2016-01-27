@@ -1,4 +1,8 @@
 class Product < ActiveRecord::Base
+	# SHOPPING CART
+	has_many :order_items
+	default_scope { where(active: true) }
+	# SHOPPING CART
 
 	# PAPERCLIP
 	belongs_to :product

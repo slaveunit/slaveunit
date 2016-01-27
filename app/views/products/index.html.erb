@@ -4,7 +4,7 @@
     <div class="store-title visible-lg-block visible-md-block">
       <h1>SLAVE UNIT APPAREL</h1>
       <h2>PRODUCT INDEX</h2>
-      <h3>Available 2016</h3>
+      <h3>Available Late 2016</h3>
       
       <div class="store-table">
         <table>
@@ -39,13 +39,23 @@
       <%= link_to 'New Product', new_product_path %>
       <% end %>
 
+
+
+<!-- SHOPPING CART -->
+    <h1 class="cart-text">
+      <%= render 'layouts/cart_text' %>
+    </h1>
+<!-- SHOPPING CART -->
+
+
+
     </div><!-- end store-title -->
 
     <div class="products-index-sm">
           <div class="products-index-title-sm visible-xs-block visible-sm-block"> 
           <h1>SLAVE UNIT APPAREL</h1>
           <h2>PRODUCT INDEX</h2>
-          <h3>Available 2016</h3>
+          <h3>Available Late 2016</h3>
           
           <div class="products-index-sm">
             
@@ -55,6 +65,13 @@
     <!-- redirect to _product in views -->
                   <%= render product %>
     <!-- redirect to _product in views -->
+
+
+<!-- SHOPPING CART -->
+                  <%= render "product_row", product: product, order_item: @order_item %>
+<!-- SHOPPING CART -->
+
+
                 <% end %>
               </tbody>
             

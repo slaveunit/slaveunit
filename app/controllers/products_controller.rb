@@ -11,6 +11,10 @@ class ProductsController < ApplicationController
   # GET /products.json
   def index
 
+  # SHOPPING CART
+      @order_item = current_order.order_items.new
+  # SHOPPING CART
+
   # FOR SEARCH FORM TO USE LIKE IN DEVELOPMENT
       if Rails.env.development?
         if params[:q]
@@ -30,7 +34,7 @@ class ProductsController < ApplicationController
         end
       end
 
-    end
+  end
 
     # GET /products/1
     # GET /products/1.json
@@ -100,7 +104,7 @@ class ProductsController < ApplicationController
   # PAPERCLIP added :photo
   # PRICE added :decimal
       def product_params
-        params.require(:product).permit :name, :description, :image_url, :colour, :photo , :photo_file_name, :photo_file_size, :photo_content_type, :photo_updated_at, :price, :decimal, :precision, :scale
+        params.require(:product).permit :name, :description, :image_url, :colour, :photo, :photo_file_name, :photo_file_size, :photo_content_type, :photo_updated_at, :price, :decimal, :precision, :scale
       end
 
 end
