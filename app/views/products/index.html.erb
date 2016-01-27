@@ -30,6 +30,7 @@
 <!-- redirect to _product in views -->
               <%= render product %>
 <!-- redirect to _product in views -->
+
             <% end %>
           </tbody>
         </table>
@@ -67,14 +68,10 @@
     <!-- redirect to _product in views -->
 
 
-<!-- SHOPPING CART -->
-                  <%= render "product_row", product: product, order_item: @order_item %>
-<!-- SHOPPING CART -->
-
 
                 <% end %>
               </tbody>
-            
+           
           </div>
 
           <% if current_user.try(:admin?) %>

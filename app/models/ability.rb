@@ -5,7 +5,7 @@ class Ability
         if user.admin?
             can :manage, :all
         else
-            can :manage, :only => User # Can edit etc only yourself
+            can :manage, Comment, :user_id => user.id # Can edit etc only yourself
     end
     # Define abilities for the passed in user here. For example:
     #

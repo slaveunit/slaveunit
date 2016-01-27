@@ -11,17 +11,17 @@ class ProductsController < ApplicationController
   # GET /products.json
   def index
 
-  # SHOPPING CART
-      @order_item = current_order.order_items.new
-  # SHOPPING CART
-
   # FOR SEARCH FORM TO USE LIKE IN DEVELOPMENT
       if Rails.env.development?
         if params[:q]
           search_term = params[:q]
           @products = Product.where("name LIKE ?", "%#{search_term}%")
+          
         else
           @products = Product.all
+# SHOPPING CART
+    @order_item = current_order.order_items.new
+# SHOPPING CART      
         end
       end
   # FOR SEARCH FORM TO USE ILIKE IN PRODUCTION
@@ -31,8 +31,13 @@ class ProductsController < ApplicationController
           @products = Product.where("name ILIKE ?", "%#{search_term}%")
         else
           @products = Product.all
+# SHOPPING CART
+    @order_item = current_order.order_items.new
+# SHOPPING CART          
         end
       end
+
+
 
   end
 

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160126232739) do
+ActiveRecord::Schema.define(version: 20160127164728) do
 
   create_table "comments", force: :cascade do |t|
     t.integer  "user_id"
@@ -68,6 +68,7 @@ ActiveRecord::Schema.define(version: 20160126232739) do
     t.integer  "photo_file_size"
     t.datetime "photo_updated_at"
     t.decimal  "price",              precision: 8, scale: 2
+    t.boolean  "active"
   end
 
   create_table "users", force: :cascade do |t|
