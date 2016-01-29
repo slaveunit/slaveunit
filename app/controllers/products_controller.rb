@@ -10,13 +10,12 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-
   # FOR SEARCH FORM TO USE LIKE IN DEVELOPMENT
       if Rails.env.development?
         if params[:q]
           search_term = params[:q]
           @products = Product.where("name LIKE ?", "%#{search_term}%")
-          
+
         else
           @products = Product.all
 # SHOPPING CART
@@ -36,15 +35,15 @@ class ProductsController < ApplicationController
 # SHOPPING CART          
         end
       end
-
-
-
   end
+
+
 
     # GET /products/1
     # GET /products/1.json
     # PAGINATE
     def show
+      @product = Product.find(params[:product_id])
       @comments = @product.comments.order("created_at DESC").paginate(page: params[:page], per_page: 3)
     end
 
