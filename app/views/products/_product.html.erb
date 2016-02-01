@@ -5,9 +5,13 @@
 	<td><a href="/products/<%= product.id %>" target="_blank"><%= product.description %></a></td>
 	<td><%= product.colour %></td>
 
-	<!-- PRICE -->
-	<td>US$<%= product.price %></td>
-	<!-- PRICE -->
+
+
+
+<td><!-- SHOPPING CART -->
+            <%= render "product_row", product: product, order_item: @order_item %>
+</td><!-- SHOPPING CART --> 
+
 
 	<% if current_user.try(:admin?) %>
 	<td><%= link_to 'Show', product %></td>

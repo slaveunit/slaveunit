@@ -15,7 +15,7 @@
               
               <th class="store-product-desc">PRODUCT DESCRIPTION</th>
               <th class="store-product-colour">COLOUR</th>
-              <th class="store-product-price">PRICE</th>
+            
               
               <% if current_user.try(:admin?) %>
               <th class="store-product-actions">ACTIONS</th>
@@ -26,10 +26,19 @@
           </thead>
 
           <tbody>
+
+
+
+
+
+
             <% @products.each do |product| %>
 <!-- redirect to _product in views -->
               <%= render product %>
 <!-- redirect to _product in views -->
+
+
+
 
             <% end %>
           </tbody>

@@ -341,7 +341,7 @@ body {
 
 
 
-/* ORDERS INDEX */
+/* ORDERS, CART */
 .orders-main {
   padding-top: 5%;
   padding-bottom: 5%;
@@ -357,7 +357,45 @@ body {
   font-size: 150%;
   color: gray;     
 }
-/* ORDERS INDEX */
+
+.well {
+      padding: 0;
+      text-align: right;
+      width: 300px;
+}
+
+.add-to-cart-button {
+  padding-top: 5%;
+  width: 49px;
+}
+
+.row {
+  height: 165px;
+  width: 90%;
+  
+}
+
+#new_order_item > div > div > input.btn.btn-danger {
+  width: 75px;
+  font-family: 'Michroma', sans-serif;
+  font-size: 85%;
+}
+
+.input-group {
+  float: right;
+}
+
+#order_item_quantity {
+  width: 75px;
+}
+/* ORDERS, CART */
+
+
+
+
+
+
+
 
 
 
@@ -564,9 +602,6 @@ body {
   padding-bottom: 5%;
 }
 
-
-
-
 .featured-main-sm {
   padding-top: 5%;
   padding-bottom: 150%;
@@ -614,10 +649,6 @@ body {
   text-align: center;
 }
 
-
-
-
-
 .index-description {
   width: 60%;
   margin: auto;
@@ -653,6 +684,11 @@ body {
   line-height: 100%;
   color: black;
 }
+
+
+
+
+
 
 
 
@@ -865,6 +901,8 @@ body {
   text-align: center;
   color: yellow;
 }
+
+
 
 /* THANK YOU */
 .panel {
