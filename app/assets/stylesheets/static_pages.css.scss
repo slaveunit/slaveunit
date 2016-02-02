@@ -2,6 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// Breakpoint adjust to display hamburger at 990px /
+@media (max-width: 990px) {
+  .navbar-nav>li {
+    float: none;
+  }
+}
+
+
 body {
 	background-color: black;
 }
@@ -311,6 +319,7 @@ body {
   padding-top: 2%;
   text-align: center;
   z-index: 5;
+  font-family: 'Michroma', sans-serif;
 }
 
 .landing-button-sm {
@@ -886,6 +895,10 @@ body {
   font-size: 170%;
 }
 
+.contact-button {
+  font-family: 'Michroma', sans-serif;
+}
+
 /* EMAIL FORM */
 .panel {
   background-color: black;
@@ -902,6 +915,15 @@ body {
   color: yellow;
 }
 
+.contact-paragraph #message {
+  width: 40em;
+  height: 10em;
+}
+
+.contact-paragraph-sm .row {
+  width: 100%;
+  margin: auto;
+}
 
 
 /* THANK YOU */
