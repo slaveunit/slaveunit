@@ -430,6 +430,24 @@ body {
   text-align: center;
 }
 
+.store-inner h1 {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color: black;
+}
+
+.store-item h2 {
+  font-family: 'Share Tech Mono', sans-serif;
+  font-size: 275%;
+  color: gray;
+}
+
+.store-inner h3 {
+  padding: 0;
+  text-align: left;
+  color: red;
+}
+
 .store-item img, .store-last-item img  {
   margin: auto;
   padding-bottom: 2%;
@@ -446,23 +464,7 @@ body {
   bottom: 265px;
 }
 
-.store-inner h1 {
-  padding-top: 5%;
-  padding-bottom: 5%;
-  color: black;
-}
 
-.store-item h2 {
-  font-family: 'Share Tech Mono', sans-serif;
-  font-size: 275%;
-  color: gray;
-}
-
-.store-inner h3 {
-  padding-bottom: 5%;
-  text-align: left;
-  color: red;
-}
 
 .store-item h6{
   color: red;
