@@ -8,6 +8,15 @@ class UserMailer < ApplicationMailer
 			:subject => "A new contact form message from #{name}")
 	end
 
+
+
+	def send_signup_email(user)
+   		@user = user
+   		mail(:to => user.email, :subject => "Welcome to My Awesome Site")
+  	end
+
+
+
   def thank_you
     @name = params[:name]
     @email = params[:email]

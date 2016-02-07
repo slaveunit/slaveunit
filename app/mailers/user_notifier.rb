@@ -7,6 +7,11 @@ class UserNotifier < ApplicationMailer
     @user = user
     mail( :to => @user.email,
     :subject => 'Thanks for checking out SLAVE UNIT APPAREL' )
+    
+    ActionMailer::Base.mail(:from => "Slave Unit Apparel Co.",
+    	:to => @user.email
+    	:subject => "Thanks for signing up."
+    	:body => @message).deliver_now
   end
 
 end
