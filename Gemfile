@@ -65,3 +65,8 @@ gem 'cancancan'
 
 # PAGINATION
 gem 'will_paginate', '~> 3.0.6'
+
+# RSPEC
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0'
+end
