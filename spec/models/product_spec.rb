@@ -8,9 +8,10 @@ describe Product do
 			@product.comments.create!(rating: 1, user: @user, body: "Sick tee!")
 			@product.comments.create!(rating: 3, user: @user, body: "Nice!")
 			@product.comments.create!(rating: 5, user: @user, body: "Awesome!")
+			 
 		end
 		it "should return the average rating of comments" do
-			expect(@average_rating).to eq "3"
+			expect(@product.average_rating).to eq 3
 		end
 	end
 
