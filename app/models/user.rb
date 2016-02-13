@@ -13,4 +13,11 @@ class User < ActiveRecord::Base
     validates :email, presence: true
 # VALIDATION
 
+# SEND SIGN-UP EMAIL
+	after_create :send_signup_email
+	def send_signup_email
+		UserMailer.send_signup_email(self).deliver_now 
+	end
+# SEND SIGN-UP EMAIL
+
 end

@@ -1,4 +1,4 @@
-class ProductsController < ApplicationController
+ class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
 # So admin abilities are applied to only these.  

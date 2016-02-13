@@ -12,7 +12,7 @@ class UserMailer < ApplicationMailer
 
 	def send_signup_email(user)
    		@user = user
-   		mail(:to => user.email, :subject => "Welcome to My Awesome Site")
+   		mail(:to => user.email, :subject => "Slave Unit Apparel")
   	end
 
 

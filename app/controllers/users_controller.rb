@@ -33,10 +33,6 @@ load_and_authorize_resource
 
     respond_to do |format|
       if @user.save
-        
-# SENDGRID Deliver the signup email
-        UserMailer.send_signup_email(@user).deliver_now  
-
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.json { render :show, status: :created, location: @user }
       else
