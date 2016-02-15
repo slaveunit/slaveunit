@@ -70,3 +70,6 @@ gem 'will_paginate', '~> 3.0.6'
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
 end
+
+# FACTORYGIRL
+gem "factory_girl_rails", "~> 4.0"
