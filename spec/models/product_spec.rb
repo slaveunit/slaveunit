@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 describe Product do
-
 	context "when the product has comments" do
 
 		before do
@@ -15,12 +14,11 @@ describe Product do
 		end
 
 		it "should return the average rating of comments" do
-			expect(@product.average_rating).to eq 3		
+			expect(@product.average_rating).to eq 3	
 		end
 		it "is not valid" do
 			expect(Product.new(description: "Word.")).not_to be_valid	
 		end
-
 	end
 
 end

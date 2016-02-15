@@ -69,6 +69,10 @@ gem 'will_paginate', '~> 3.0.6'
 # RSPEC
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
+  gem 'guard'
+  gem 'guard-rspec', require: false
+  gem 'spork-rails'
+  gem 'guard-spork'
 end
 
 # FACTORYGIRL
