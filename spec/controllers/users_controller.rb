@@ -7,7 +7,7 @@ describe UsersController, :type => :controller do
 		@user = FactoryGirl.create(:user)
 	end
 
-	Describe "GET #show" do
+	describe "GET #show" do
 		context "User is logged in" do
 			before do
 				sign_in @user 

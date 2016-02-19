@@ -8,6 +8,9 @@ describe Product do
 			@product = FactoryGirl.create(:product)
 			# @user = User.create!(first_name: "This", last_name: "Guy", email: "somekindof@email.com", password: "1qaz2wsx")
 			@user = FactoryGirl.create(:user)
+
+			# @product.photo = File.new("app/assets/images/Thanks-sm.jpg")
+
 			@product.comments.create!(rating: 1, user: @user, body: "Sick tee!")
 			@product.comments.create!(rating: 3, user: @user, body: "Nice!")
 			@product.comments.create!(rating: 5, user: @user, body: "Awesome!")

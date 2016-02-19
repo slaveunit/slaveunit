@@ -52,7 +52,11 @@
 			<li><a href="#">MD</a></li>
 			<li><a href="#">LG</a></li>
 			</ul>
-			<button type="button" class="btn btn-default btn-sm">Add to Cart</button>
+<!-- STRIPE BUTTON -->
+			<%= form_tag "/payments/create" do %>
+				<%= render partial: "shared/stripe_checkout_button" %>
+			<% end %>
+<!-- STRIPE BUTTON -->
 		</div>
 
 

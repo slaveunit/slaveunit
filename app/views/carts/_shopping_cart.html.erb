@@ -14,5 +14,12 @@
 <% else %>
   <% @order_items.each do |order_item| %>
     <%= render 'carts/cart_row', product: order_item.product, order_item: order_item, show_total: true %>
+
+<!-- STRIPE BUTTON -->
+      <%= form_tag "/payments/create" do %>
+        <%= render partial: "shared/stripe_checkout_button" %>
+      <% end %>
+<!-- STRIPE BUTTON -->
+
   <% end %>
 <% end %>
