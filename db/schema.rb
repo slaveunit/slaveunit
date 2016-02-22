@@ -45,6 +45,8 @@ ActiveRecord::Schema.define(version: 20160127164728) do
   end
 
   create_table "orders", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "product_id"
     t.decimal  "subtotal",        precision: 12, scale: 3
     t.decimal  "tax",             precision: 12, scale: 3
     t.decimal  "shipping",        precision: 12, scale: 3
@@ -55,6 +57,8 @@ ActiveRecord::Schema.define(version: 20160127164728) do
   end
 
   add_index "orders", ["order_status_id"], name: "index_orders_on_order_status_id"
+  add_index "orders", ["product_id"], name: "index_orders_on_product_id"
+  add_index "orders", ["user_id"], name: "index_orders_on_user_id"
 
   create_table "products", force: :cascade do |t|
     t.string   "name"
