@@ -29,7 +29,8 @@ def show
 
 
   charge = Stripe::Charge.create(
-    :amount      => total_price,
+    :amount      => 'total_price',
+    :currency    => 'usd'
   )
 
 rescue Stripe::CardError => e
