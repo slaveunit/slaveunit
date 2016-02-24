@@ -4,5 +4,6 @@
   data-image="/Thanks-sm.jpg"
   data-name="SLAVE UNIT APPAREL CO."
   data-description="Show Me the Money"
-  data-amount="<%= number_to_currency order_item.total_price %>">
+  data-amount="<%= render partial: 'cart_row', collection: @product, as: :item, locals: {amount: total_price} %>"
+  >
 </script>

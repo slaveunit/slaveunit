@@ -4,6 +4,25 @@ class Product < ActiveRecord::Base
 	default_scope { where(active: true) }
 	# SHOPPING CART
 
+
+
+		# STRIPE copied from models > order_item to make price button on Stripe match cart.
+		  def unit_price
+		    if persisted?
+		      self[:unit_price]
+		    else
+		      product.price
+		    end
+		  end
+
+		  def total_price
+		    unit_price * quantity
+		  end
+		# STRIPE copied from models > order_item to make price button on Stripe match cart.
+
+
+	
+
 	# PAPERCLIP
 	belongs_to :product
 	has_attached_file :photo, default_url: "/images/:style/missing.png"

@@ -5,8 +5,6 @@
 # So public can view product without signing in.
   load_and_authorize_resource :only => [:new, :update, :create, :destroy]
 
- 
-
   # GET /products
   # GET /products.json
   def index
