@@ -1,27 +1,23 @@
 class CartsController < ApplicationController
 
-	def show
 
+def show
+	@order_items = current_order.order_items # from SHOPPING CART
+	
 
+		# STRIPE CHECKOUT
+		@current_user ||= User.find(session[:user_id])
+		charge = Stripe::Charge.create(
+			:customer    => 'user',
+			:amount      => 'total_price',
+			:currency    => 'usd'
+		)
 
-			# STRIPE copied from models > order_item to make price button on Stripe match cart.
-			  def unit_price
-			    if persisted?
-			      self[:unit_price]
-			    else
-			      product.price
-			    end
-			  end
+		rescue Stripe::CardError => e
+		flash[:error] = e.message
+		redirect_to new_charge_path
+		end
+		# STRIPE CHECKOUT
 
-			  def total_price
-			    unit_price * quantity
-			  end
-			# STRIPE copied from models > order_item to make price button on Stripe match cart.
-
-
-
-  
-		@order_items = current_order.order_items
-	end
 
 end
