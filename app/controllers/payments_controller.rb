@@ -1,7 +1,7 @@
 class PaymentsController < ApplicationController
 
 	def create
-		@product = Product.find(params[:id])
+		@paythis = Product.find(params[:id])
 		@user = current_user
 
 		# Get the credit card details submitted by the form
@@ -20,6 +20,7 @@ class PaymentsController < ApplicationController
 				Order.create(:product_id => '@product_id',
 					:user_id => 'current_user',
 					:total_price => '@total_price'
+			)
 			end
 
 			rescue Stripe::CardError => e

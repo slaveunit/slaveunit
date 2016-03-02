@@ -41,6 +41,7 @@ Rails.application.routes.draw do
 
   # PAYMENTS
   post 'payments/create'
+  get 'payments/create'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

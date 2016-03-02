@@ -2,7 +2,7 @@
   src="https://checkout.stripe.com/checkout.js" class="stripe-button"
   data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
   data-image="/square-image.png"
-  data-name="<%= hidden_field_tag(:product_id) %>"
+  data-name="<%= hidden_field_tag 'paythis', @paythis %>"
   data-description="Show Me the Money"
-  data-amount="666">
+  data-amount="@total_amount">
 </script>
