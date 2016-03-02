@@ -58,7 +58,7 @@
 
   # POST /products
   # POST /products.json
-  #PAPERCLIP, added for: "params[:photo]"
+  # PAPERCLIP, added for: "params[:photo]"
   def create
     @product = Product.new(product_params, params[:photo] )
     respond_to do |format|
@@ -96,7 +96,6 @@
       format.json { head :no_content }
     end
   end
-
 
 
 

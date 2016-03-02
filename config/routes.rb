@@ -39,6 +39,9 @@ Rails.application.routes.draw do
   # EMAIL
   post 'static_pages/thank_you'
 
+  # PAYMENTS
+  post 'payments/create'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

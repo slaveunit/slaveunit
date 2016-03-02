@@ -22,24 +22,6 @@ class OrderItem < ActiveRecord::Base
 
 
 
-
-
-# STRIPE CHECKOUT
-#def show
-#  charge = Stripe::Charge.create(
-#    :amount      => 'total_price',
-#    :currency    => 'usd'
-#  )
-#rescue Stripe::CardError => e
-#  flash[:error] = e.message
-#  redirect_to new_charge_path
-#end
-# STRIPE CHECKOUT
-
-
-
-
-
 private
   def product_present
     if product.nil?
