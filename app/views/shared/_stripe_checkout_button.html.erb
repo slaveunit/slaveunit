@@ -1,8 +1,11 @@
-<script
-  src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-  data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-  data-image="/square-image.png"
-  data-name="<%= hidden_field_tag 'paythis', @paythis %>"
-  data-description="Show Me the Money"
-  data-amount="@total_amount">
-</script>
+<form action="" method="POST">
+  <script
+    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+    data-amount="2000"
+    data-name="SLAVE UNIT APPAREL CO."
+    data-description="Show Me the Money"
+    data-image="/128x128.png"
+    data-locale="auto">
+  </script>
+</form>

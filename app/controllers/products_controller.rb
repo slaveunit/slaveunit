@@ -110,4 +110,5 @@
     params.require(:product).permit :name, :description, :image_url, :colour, :photo, :photo_file_name, :photo_file_size, :photo_content_type, :photo_updated_at, :price, :decimal, :precision, :scale
   end
 
+
 end

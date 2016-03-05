@@ -6,6 +6,13 @@
 		<div class="shopping-cart">
 			<%= render "shopping_cart" %>
 		</div>
+
+<!-- STRIPE BUTTON -->
+      <%= form_tag "/payments/create" do %>
+        <%= render partial: "shared/stripe_checkout_button" %>
+      <% end %>
+<!-- STRIPE BUTTON --> 
+		
 	</div>
 
 	<div class="about-inner-sm visible-xs-block visible-sm-block">
@@ -16,5 +23,10 @@
 		</div>
 	</div>
 
+
+
 </div>
+
+
+
 
