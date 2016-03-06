@@ -40,4 +40,8 @@ Rails.application.configure do
 
   # for DEVISE gem, to be able to customize login/out screens
   default_url_options
+  
+  config.log_level = :debug
+
 end
+

@@ -1,5 +1,10 @@
 class OrderItemsController < ApplicationController
   def create
+
+# DEBUGGING EXERCISE interactive debugging
+    byebug
+# DEBUGGING EXERCISE interactive debugging
+
   	@order = current_order
     @order_item = @order.order_items.new(order_item_params)
     @order.save
@@ -14,7 +19,7 @@ class OrderItemsController < ApplicationController
   end
 
   def destroy
-  	@order = current_order
+  	@order = current_order 
     @order_item = @order.order_items.find(params[:id])
     @order_item.destroy
     @order_items = @order.order_items

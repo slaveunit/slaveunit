@@ -79,3 +79,5 @@ end
 gem "factory_girl_rails", "~> 4.0"
 
 gem 'stripe'
+
+gem 'byebug'

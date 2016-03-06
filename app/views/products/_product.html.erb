@@ -1,5 +1,10 @@
 <div class="visible-lg-block visible-md-block">
 <tr>
+
+<!-- DEBUGGING exercise, level 0, display product name in an index. -->
+	<% logger.debug "Index display #{product.name}" %>
+<!-- DEBUGGING exercise, level 0, display product name in an index. -->
+
 	<td><a href="/products/<%= product.id %>" target="_blank"><%= product.name %></a></td>
 	<td><a href="/products/<%= product.id %>" target="_blank"><%= image_tag (product.photo), :style => "margin: auto", :class => "img-responsive" %></a></td>
 	<td><a href="/products/<%= product.id %>" target="_blank"><%= product.description %></a></td>
