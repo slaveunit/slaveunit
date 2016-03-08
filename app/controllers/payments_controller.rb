@@ -2,9 +2,8 @@ class PaymentsController < ApplicationController
 
 	def create
 		@product = Product.find(params[:product_id])
-		@user = current_user
 		@total_price = unit_price * quantity
-
+		@total_price = params[:total_price]
 
 # STRIPE, creating charges
 		# Set your secret key: remember to change this to your live secret key in production
