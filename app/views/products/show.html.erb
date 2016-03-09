@@ -15,7 +15,16 @@
 			<h2>How it looks like:</h2>
 		</div>
 		<div class="store-indivproduct-photo">
-			<%= image_tag @product.photo.url, :class => "img-responsive" %>
+
+	<!-- ELEVATEZOOM added, id, data_zoom_image and script -->
+			<%= image_tag @product.photo.url, :class => "img-responsive img-zoom", :data_zoom_image => "@product.photo.url" %>
+			<script>
+				$(document).on('ready page:load', function () {// document ready
+					$(".img-zoom").elevateZoom({scrollZoom : true});
+				});//end document ready
+			</script>
+	<!-- ELEVATEZOOM added, id, data_zoom_image and script -->
+	
 		</div>
 	<!-- PAPERCLIP -->
 
