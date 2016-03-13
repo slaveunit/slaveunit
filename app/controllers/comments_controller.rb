@@ -38,6 +38,7 @@ class CommentsController < ApplicationController
 	# DELETE COMMENT
 
 	def show
+		@comments = @product.comments.order
 	end
 	
 private
