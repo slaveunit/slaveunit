@@ -74,13 +74,17 @@
 <!-- RATY average rating -->
 
 <!-- COMMENTS -->
+
+
 		<% if signed_in? %>
 			<h4>Review this:</h4>
-			<%= form_for([@product, @product.comments.build]) do |f| %>
+<!-- AJAX added, remote: true -->
+			<%= form_for([@product, @product.comments.build], remote: true) do |f| %>
+<!-- AJAX added, remote: true -->
 				<p>
 					<%= f.label :body, "What do you think?" %><br>
 					<%= f.text_area :body %>
-				</p>	
+				</p>
 
 <!-- RATY -->
 				<p>Rate it:
@@ -93,6 +97,7 @@
 					
 				</p>
 			<% end %>
+			<%= render :partial => 'comments/comment' %>
 		<% end %>
 
 <!-- RATY -->

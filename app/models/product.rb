@@ -2,7 +2,7 @@ class Product < ActiveRecord::Base
 	# SHOPPING CART
 	has_many :order_items
 	default_scope { where(active: true) }
-	# SHOPPING CART
+	# SHOPPING CART 
 
 
 	# PAPERCLIP
@@ -30,5 +30,3 @@ class Product < ActiveRecord::Base
 	#VALIDATION
 
 end
-
-

@@ -14,6 +14,11 @@ class CommentsController < ApplicationController
 			if @comment.save
 				format.html { redirect_to @product, notice: "Review creation: SUCCESS"}
 				format.json { render :show, status: :created, location: @product }
+	
+	# AJAX, display new comment after posting without reloading page.
+			  	format.js
+	# AJAX, display new comment after posting without reloading page.
+	
 			else
 				format.html { redirect_to @product, alert: "Review creation: FAIL"}
 				format.json { render json: @comment.errors, status: :unprocessable_entity }
@@ -31,6 +36,9 @@ class CommentsController < ApplicationController
 		redirect_to product
 	end
 	# DELETE COMMENT
+
+	def show
+	end
 	
 private
 
