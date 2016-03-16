@@ -48,6 +48,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
+    angularjs-rails (1.5.0)
     arel (6.0.3)
     aws-sdk (2.2.24)
       aws-sdk-resources (= 2.2.24)
@@ -310,6 +311,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  angularjs-rails
   aws-sdk
   brakeman
   byebug

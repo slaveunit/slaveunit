@@ -83,3 +83,5 @@ gem 'stripe'
 gem 'byebug'
 
 gem "brakeman", :require => false
+
+gem 'angularjs-rails'
