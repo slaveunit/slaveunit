@@ -5,6 +5,9 @@
 # So public can view product without signing in.
   load_and_authorize_resource :only => [:new, :update, :create, :destroy]
 
+  # ANGULAR
+  respond_to :json, :html
+
   # GET /products
   # GET /products.json
   def index
@@ -13,7 +16,10 @@
         if params[:q]
           search_term = params[:q]
           @products = Product.where("name LIKE ?", "%#{search_term}%")
-
+          
+          # ANGULAR
+          respond_with @products
+          
         else
           @products = Product.all
 # SHOPPING CART

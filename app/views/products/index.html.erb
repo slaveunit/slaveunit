@@ -37,11 +37,16 @@
 
 
             <% @products.each do |product| %>
+
+<!-- RUSSIAN DOLL CACHE -->
+              <% cache(cache_key_for_products) do %>
+
 <!-- redirect to _product in views -->
-              <%= render product %>
+                <%= render product %>
 <!-- redirect to _product in views -->
 
-
+<!-- RUSSIAN DOLL CACHE -->
+              <% end %>
 
 
             <% end %>
