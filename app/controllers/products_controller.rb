@@ -51,6 +51,8 @@
   # PAGINATE
   def show
     @comments = @product.comments.order("created_at DESC").paginate(page: params[:page], per_page: 3)
+    @product = Product.find(params[:id])
+    @order_item = current_order.order_items.new
   end
 
   # GET /products/new
@@ -104,9 +106,7 @@
   end
 
 
-
   private
-
 
 
   # Never trust parameters from the scary internet, only allow the white list through.

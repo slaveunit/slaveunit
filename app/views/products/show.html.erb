@@ -10,6 +10,8 @@
 		</div>
 
 
+
+<!-- DISPLAYS PRODUCT-->
 	<!-- PAPERCLIP -->
 		<div>
 			<h2>How it looks like:</h2>
@@ -42,14 +44,6 @@
 			<p><%= @product.colour %></p>
 		</div>
 
-<!-- PRICE -->
-		<div>
-		  <h2>The Small Price to Pay:</strong></h2>
-		</div>
-		<div class="store-indivproduct-price">
-			<p>US$<%= @product.price %></p>
-		</div>
-<!-- PRICE -->
 
 <!-- SIZE AND ADD TO CART BUTTONS -->
 		<div class="btn-group">
@@ -63,6 +57,35 @@
 			</ul>
 
 		</div>
+<!-- DISPLAYS PRODUCT-->
+
+<!-- ADD TO CART BUTTON -->
+    <div class="well">
+  		<div class="row">
+    		<div>
+		      <%= form_for @order_item, remote: true do |f| %>
+		        <h4 style="font-family: 'Share Tech Mono', sans-serif;">The Small Price to Pay: 
+		          <span style="color: green">
+		            <%= number_to_currency @product.price %>
+		          </span>
+		        
+		        </h4>
+		        <h4 style="font-family: 'Share Tech Mono', sans-serif;">
+		          How many:
+		        </h4>
+		        <div class="input-group">
+		          <%= f.number_field :quantity, value: 1, class: "form-control", min: 1 %>
+		          <div class="input-group-btn, add-to-cart-button">
+		            <%= f.hidden_field :product_id, value: @product.id %>
+		            <%= f.submit "ADD IT", class: "btn btn-danger" %>
+		          </div>
+		        </div>
+		      <% end %>
+		    </div>
+		  </div>
+		</div>
+<!-- ADD TO CART BUTTON -->
+
 <!-- SIZE AND ADD TO CART BUTTONS -->
 
 

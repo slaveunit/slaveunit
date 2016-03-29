@@ -1,6 +1,6 @@
 <div class="visible-lg-block visible-md-block">
 
-<% cache product do %><!-- RUSSIAN DOLL CACHE -->
+<% cache product do %><!-- CACHE KEY-->
 	<tr>
 		<td><a href="/products/<%= product.id %>" target="_blank"><%= product.name %></a></td>
 		<td><a href="/products/<%= product.id %>" target="_blank"><%= image_tag (product.photo), :style => "margin: auto", :class => "img-responsive" %></a></td>
@@ -20,7 +20,7 @@
 		<td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 		<% end %>
 	</tr>
-<% end %><!-- RUSSIAN DOLL CACHE -->
+<% end %><!-- CACHE KEY-->
 
 </div>
 

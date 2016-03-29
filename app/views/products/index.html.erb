@@ -31,22 +31,15 @@
 
           <tbody>
 
-
-
-
-
-
             <% @products.each do |product| %>
 
-<!-- RUSSIAN DOLL CACHE -->
-              <% cache(cache_key_for_products) do %>
+              <% cache product do %><!-- CACHE KEY-->
 
 <!-- redirect to _product in views -->
                 <%= render product %>
 <!-- redirect to _product in views -->
 
-<!-- RUSSIAN DOLL CACHE -->
-              <% end %>
+              <% end %><!-- CACHE KEY-->
 
 
             <% end %>

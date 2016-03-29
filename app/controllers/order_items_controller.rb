@@ -1,10 +1,5 @@
 class OrderItemsController < ApplicationController
   def create
-
-# DEBUGGING EXERCISE interactive debugging
-    byebug
-# DEBUGGING EXERCISE interactive debugging
-
   	@order = current_order
     @order_item = @order.order_items.new(order_item_params)
     @order.save
